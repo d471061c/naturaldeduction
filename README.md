@@ -1,2 +1,2 @@
-# naturaldeduction
-Natural deduction - proof of concept
+# Natural Deduction
+A proof of concept
