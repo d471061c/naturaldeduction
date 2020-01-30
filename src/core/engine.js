@@ -51,7 +51,9 @@ const catchEvent = (event) => {
 
 /**
  * Run engine with given objects
- * @param {array of rules} content Array of rules
+ * @param {context2d} ctx context2d from canvas
+ * @param {canvas} canvas canvas (html-element)
+ * @param {[DeductionRule]} content Array of deduction rules
  */
 const runEngine = (ctx, canvas, content) => {
     window.onload = () => {
