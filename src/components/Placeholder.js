@@ -1,10 +1,6 @@
-import {
-    setFillStyle,
-    fillRectangle
-} from '../core/graphics.js'
-import {
-    EVENT_TYPE
-} from '../core/engine.js'
+import { setFillStyle, fillRectangle } from '../core/graphics.js'
+import { EVENT_TYPE } from '../core/engine.js'
+import GameObject from './GameObject.js';
 
 // Default width and height of the placeholder
 const PlaceholderDimension = {
@@ -18,8 +14,9 @@ const PlaceholderType = {
     rule: 3
 };
 
-class Placeholder {
+class Placeholder extends GameObject {
     constructor(x, y) {
+        super();
         this.position = { x, y };
         this.type = PlaceholderType.empty;
         this.value = null;
@@ -101,13 +98,6 @@ class Placeholder {
         } else if (this.type === PlaceholderType.rule) {
             this.value.onEvent(type, event);
         }
-    }
-
-    /**
-     * This method will be run in the mainloop.
-     */
-    update() {
-
     }
 }
 

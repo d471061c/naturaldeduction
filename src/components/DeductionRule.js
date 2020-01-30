@@ -1,23 +1,8 @@
-import { 
-    RULE_TYPE_FI,
-    RULE_TYPE,
-    CONJECTIVE,
-    CONJECTIVE_SYMBOL
-} from '../core/rule.js'
-import { 
-    Placeholder,
-    PlaceholderDimension,
-    PlaceholderType
- } from './Placeholder.js'
-import {
-    GLOBAL_SETTINGS, 
-    setFillStyle, 
-    fillText,
-    line
-} from '../core/graphics.js'
-import {
-    EVENT_TYPE
-} from '../core/engine.js'
+import {  RULE_TYPE_FI, RULE_TYPE, CONJECTIVE, CONJECTIVE_SYMBOL } from '../core/rule.js'
+import { Placeholder, PlaceholderDimension, PlaceholderType } from './Placeholder.js'
+import { GLOBAL_SETTINGS, setFillStyle, fillText, line } from '../core/graphics.js'
+import { EVENT_TYPE } from '../core/engine.js'
+import GameObject from './GameObject.js'
 
 /**
  * Returns an identifier of a rule as a string, e.g. "vE" (elimination, or)
@@ -89,8 +74,9 @@ const getPlaceholderAmount = (ruleType, conjective) => {
     }
 }
 
-class DeductionRule {
+class DeductionRule extends GameObject {
     constructor(x, y, ruleType, conjective) {
+        super();
         this.position = { x, y };
         this.dragged = false;
         this.color = "#000"
