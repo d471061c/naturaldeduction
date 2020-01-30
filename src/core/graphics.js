@@ -33,7 +33,6 @@ const line = (ctx, sx, sy, ex, ey) => {
     ctx.stroke();
 }
 
-
 /**
  * Draw text on the canvas
  * @param {context2d} ctx context2d from canvas
