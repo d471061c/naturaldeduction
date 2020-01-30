@@ -78,19 +78,21 @@ class DeductionRule extends GameObject {
     constructor(x, y, ruleType, conjective) {
         super();
         this.position = { x, y };
-        this.dragged = false;
-        this.color = "#000"
-
-        this.spacing = {
-            x: 40,
-            y: 4,
-            text: 4
-        };
-
         this.ruleType = ruleType;
         this.conjective = conjective;
         this.name = getRuleName(this.ruleType, this.conjective);
 
+        this.dragged = false;
+        this.color = "#000"
+        this.spacing = { x: 40,  y: 4, text: 4 };
+
+        this.createPlaceholders()
+    }
+
+    /**
+     * Create placeholders for deduction rule
+     */
+    createPlaceholders() {
         this.placeholderAmount = getPlaceholderAmount(this.ruleType, this.conjective);
         this.placeholders = [new Placeholder(this.position.x, this.position.y)];
 
@@ -100,8 +102,9 @@ class DeductionRule extends GameObject {
             this.placeholders.push(new Placeholder(newX, newY));
         }
 
-        this.result = new Placeholder(this.position.x + this.getWidth() / 2 - PlaceholderDimension.width / 2,
-                                      this.position.y + PlaceholderDimension.height + this.spacing.y * 2);
+        const resultX = this.position.x + this.getWidth() / 2 - PlaceholderDimension.width / 2;
+        const resultY = this.position.y + PlaceholderDimension.height + this.spacing.y * 2;
+        this.result = new Placeholder(resultX, resultY);
     }
 
     /**
@@ -109,19 +112,9 @@ class DeductionRule extends GameObject {
      * @param {int} idx Index of the placeholder
      */
     updatePlaceholder(idx) {
-        if (this.placeholders[idx].type === PlaceholderType.empty) {
-            if (idx == 0) {
-                this.placeholders[idx].updatePosition(this.position.x, this.position.y);
-            } else {
-                this.placeholders[idx].updatePosition((this.placeholders[idx - 1].getWidth() + this.spacing.x) + this.placeholders[idx - 1].position.x, this.position.y);
-            }
-        } else if (this.placeholders[idx].type === PlaceholderType.rule) {
-            if (idx == 0) {
-                this.placeholders[idx].updatePosition(this.position.x, this.position.y - PlaceholderDimension.height - this.spacing.y * 2);
-            } else {
-                this.placeholders[idx].updatePosition((this.placeholders[idx - 1].getWidth() + this.spacing.x) + this.placeholders[idx - 1].position.x, this.position.y- PlaceholderDimension.height - this.spacing.y * 2);
-            }
-        }
+        let newX = idx > 0 ? this.placeholders[idx - 1].getWidth() + this.spacing.x + this.placeholders[idx - 1].position.x : this.position.x;
+        let newY = this.placeholders[idx].type === PlaceholderType.rule ? this.position.y - PlaceholderDimension.height - this.spacing.y * 2 : this.position.y;
+        this.placeholders[idx].updatePosition(newX, newY);
     }
 
     /**
@@ -145,7 +138,7 @@ class DeductionRule extends GameObject {
      * Returns the width of the rule.
      */
     getWidth() {
-        var lastPlaceholder = this.placeholders[this.placeholders.length - 1];
+        const lastPlaceholder = this.placeholders[this.placeholders.length - 1];
         return lastPlaceholder.position.x + lastPlaceholder.getWidth() - this.position.x;
     }
 
@@ -154,7 +147,7 @@ class DeductionRule extends GameObject {
      */
     render(ctx) {
         this.result.render(ctx);
-        this.placeholders.forEach((placeholder) => {
+        this.placeholders.forEach(placeholder => {
             placeholder.render(ctx);
         });
         
@@ -174,7 +167,7 @@ class DeductionRule extends GameObject {
      * @param {window.event} event Event from the event listener
      */
     onEvent(type, event) {
-        this.placeholders.forEach((placeholder) => {
+        this.placeholders.forEach(placeholder => {
             placeholder.onEvent(type, event);
         })
 
