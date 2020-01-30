@@ -89,7 +89,7 @@ const getPlaceholderAmount = (ruleType, conjective) => {
     }
 }
 
-class Rule {
+class DeductionRule {
     constructor(x, y, ruleType, conjective) {
         this.position = { x, y };
         this.dragged = false;
@@ -227,5 +227,5 @@ class Rule {
 }
 
 export {
-    Rule
+    DeductionRule
 }
