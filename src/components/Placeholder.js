@@ -18,11 +18,17 @@ class Placeholder extends GameObject {
     constructor(x, y) {
         super();
         this.position = { x, y };
-        this.type = PlaceholderType.empty;
-        this.value = null;
-        this.color = "#ccc";
         this.width = PlaceholderDimension.width;
         this.height = PlaceholderDimension.height;
+
+        // Settings
+        this.type = PlaceholderType.empty;
+        this.value = null;
+
+        // Colors
+        this.defaultColor = "#ccc";
+        this.hoverColor = "#aaa"
+        this.color = this.defaultColor
     }
 
     /**
@@ -81,11 +87,7 @@ class Placeholder extends GameObject {
                     alert("To be implemented")
                 }
             } else if (type === EVENT_TYPE.mouseMove ) {
-                if (this.collides(event.x, event.y)) {
-                    this.color = "#aaa";
-                } else {
-                    this.color = "#ccc";
-                }
+                this.color = this.collides(event.x, event.y) ? this.hoverColor : this.defaultColor;
             } 
         } else if (this.type === PlaceholderType.rule) {
             this.value.onEvent(type, event);

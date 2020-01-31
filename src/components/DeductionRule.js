@@ -129,8 +129,17 @@ class DeductionRule extends GameObject {
      * @param {int} idx Index of the placeholder
      */
     updatePlaceholder(idx) {
-        let newX = idx > 0 ? this.placeholders[idx - 1].getWidth() + this.spacing.x + this.placeholders[idx - 1].position.x : this.position.x;
-        let newY = this.placeholders[idx].type === PlaceholderType.rule ? this.position.y - PlaceholderDimension.height - this.spacing.y * 2 : this.position.y;
+        let newX = this.position.x;
+        let newY = this.position.y;
+
+        if (idx > 0) {
+            newX = this.placeholders[idx - 1].getWidth() + this.spacing.x + this.placeholders[idx - 1].position.x;
+        } 
+
+        if (this.placeholders[idx].type === PlaceholderType.rule) {
+            newY = this.position.y - PlaceholderDimension.height - this.spacing.y * 2
+        } 
+
         this.placeholders[idx].updatePosition(newX, newY);
     }
 
