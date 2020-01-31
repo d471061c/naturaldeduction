@@ -80,10 +80,12 @@ class DeductionRule extends GameObject {
         this.position = { x, y };
         this.ruleType = ruleType;
         this.conjective = conjective;
+
         // Settings
         this.dragged = false;
         this.color = "#000"
         this.spacing = { x: 40,  y: 4, text: 4 };
+
         // Components
         this.text = { value: getRuleName(this.ruleType, this.conjective), x: 0, y: 0 }
         this.edge = { sx: 0, sy: 0, ex: 0, ey: 0 }
@@ -193,9 +195,8 @@ class DeductionRule extends GameObject {
      * @param {int} y Y-coordinate
      */
     collides(x, y) {
-        if (this.position.x < x && x < this.position.x + this.getWidth()) {
-            if (this.position.y + PlaceholderDimension.height < y && 
-                y < this.position.y + PlaceholderDimension.height + this.spacing.y * 2) {
+        if (this.position.x < x && x < this.edge.ex) {
+            if (this.edge.sy - this.spacing.y < y &&  y < this.edge.sy + this.spacing.y) {
                 return true;
             }
         }

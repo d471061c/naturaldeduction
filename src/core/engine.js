@@ -130,7 +130,7 @@ const runEngine = (ctx, canvas, content) => {
             });
         });
         
-        mainloop(ctx);
+        mainloop();
     }
 }
 
