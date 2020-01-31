@@ -1,9 +1,9 @@
 const CONJECTIVE = {
-    and: 0x1,
-    or: 0x2,
-    implication: 0x3,
-    equivelance: 0x4,
-    negation: 0x5
+    and: 1,
+    or: 2,
+    implication: 3,
+    equivelance: 4,
+    negation: 5
 };
 
 const CONJECTIVE_SYMBOL = {
@@ -15,8 +15,8 @@ const CONJECTIVE_SYMBOL = {
 };
 
 const RULE_TYPE = {
-    introduction: 0x1,
-    elimination: 0x2
+    introduction: 1,
+    elimination: 2
 };
 
 const RULE_TYPE_EN = {
