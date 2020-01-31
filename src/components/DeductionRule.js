@@ -80,13 +80,28 @@ class DeductionRule extends GameObject {
         this.position = { x, y };
         this.ruleType = ruleType;
         this.conjective = conjective;
-        this.name = getRuleName(this.ruleType, this.conjective);
-
+        // Settings
         this.dragged = false;
         this.color = "#000"
         this.spacing = { x: 40,  y: 4, text: 4 };
+        // Components
+        this.text = { value: getRuleName(this.ruleType, this.conjective), x: 0, y: 0 }
+        this.edge = { sx: 0, sy: 0, ex: 0, ey: 0 }
 
         this.createPlaceholders()
+        this.updateComponents()
+    }
+
+    /**
+     * Update positions of components
+     */
+    updateComponents() {
+        this.text.x = this.position.x + this.getWidth() + this.spacing.text
+        this.text.y = this.position.y + PlaceholderDimension.height + GLOBAL_SETTINGS.fontSize / 2
+        this.edge.sx = this.position.x
+        this.edge.sy = this.position.y + PlaceholderDimension.height + this.spacing.y
+        this.edge.ex = this.position.x + this.getWidth()
+        this.edge.ey = this.position.y + PlaceholderDimension.height + this.spacing.y
     }
 
     /**
@@ -125,6 +140,7 @@ class DeductionRule extends GameObject {
     updatePosition(x, y) {
         this.position.x = x;
         this.position.y = y;
+        this.updateComponents()
 
         for (var i = 0; i < this.placeholders.length; i++) {
             this.updatePlaceholder(i);
@@ -149,11 +165,8 @@ class DeductionRule extends GameObject {
         });
         
         setFillStyle(ctx, this.color);
-        fillText(ctx, this.name, this.position.x + this.getWidth() + this.spacing.text,
-                            this.position.y + PlaceholderDimension.height + GLOBAL_SETTINGS.fontSize / 2);
-        line(ctx, this.position.x, this.position.y + PlaceholderDimension.height + this.spacing.y,
-             this.position.x + this.getWidth(), this.position.y + PlaceholderDimension.height + this.spacing.y);
-
+        fillText(ctx, this.text.value, this.text.x, this.text.y);
+        line(ctx, this.edge.sx, this.edge.sy, this.edge.ex, this.edge.ey);
 
         ctx.stroke();
     }
