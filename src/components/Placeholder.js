@@ -59,9 +59,6 @@ class Placeholder extends GameObject {
         }
     }
 
-    /**
-     * Draw the placeholder onto the canvas.
-     */
     render(ctx) {
         switch(this.type) {
             case PlaceholderType.empty:
@@ -77,11 +74,6 @@ class Placeholder extends GameObject {
         }
     }
 
-    /**
-     * Handle the event (IO-interaction)
-     * @param {EVENT_TYPE} type The type of the event, e.g. (mousemove)
-     * @param {window.event} event Event from the event listener
-     */
     onEvent(type, event) {
         if (this.type === PlaceholderType.empty) {
             if (type === EVENT_TYPE.mouseDown) {

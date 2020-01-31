@@ -142,9 +142,6 @@ class DeductionRule extends GameObject {
         return lastPlaceholder.position.x + lastPlaceholder.getWidth() - this.position.x;
     }
 
-    /**
-     * Draw the rule onto the canvas
-     */
     render(ctx) {
         this.result.render(ctx);
         this.placeholders.forEach(placeholder => {
@@ -161,11 +158,6 @@ class DeductionRule extends GameObject {
         ctx.stroke();
     }
 
-    /**
-     * Handle the event from the event listener
-     * @param {EVENT_TYPE} type Type of the event, e.g. mouseMove
-     * @param {window.event} event Event from the event listener
-     */
     onEvent(type, event) {
         this.placeholders.forEach(placeholder => {
             placeholder.onEvent(type, event);
