@@ -75,8 +75,10 @@ const getPlaceholderAmount = (ruleType, conjective) => {
 }
 
 class DeductionRule extends GameObject {
-    constructor(x, y, ruleType, conjective) {
+    constructor(id, x, y, ruleType, conjective) {
         super();
+        this.id = id
+
         this.position = { x, y };
         this.ruleType = ruleType;
         this.conjective = conjective;
