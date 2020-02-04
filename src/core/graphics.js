@@ -34,6 +34,30 @@ const line = (ctx, sx, sy, ex, ey) => {
 }
 
 /**
+ * Draw selected rectangle
+ * @param {context2d} ctx context2d from canvas
+ * @param {int} x X-coordinate
+ * @param {int} y Y-coordinate
+ * @param {int} width Width
+ * @param {int} height Height
+ * @param {int} length Length of the lines
+ */
+const fillSelected = (ctx, x, y, width, height, length) => {
+    // top left corner
+    line(ctx, x, y, x + length, y);
+    line(ctx, x, y, x, y + length);
+    // top right corner
+    line(ctx, x + width, y, x + width - length, y);
+    line(ctx, x + width, y, x + width, y + length);
+    // lower left corner 
+    line(ctx, x, y + height, x + length, y + height);
+    line(ctx, x, y + height, x, y + height - length);
+    // lower right corner
+    line(ctx, x + width, y + height, x + width - length, y + height);
+    line(ctx, x + width, y + height, x + width, y - length + height);
+}
+
+/**
  * Draw text on the canvas
  * @param {context2d} ctx context2d from canvas
  * @param {string} text Text to be displayed
@@ -80,5 +104,6 @@ export {
     fillText,
     clearCanvas,
     setFillStyle,
+    fillSelected,
     resetFillStyle
 }
