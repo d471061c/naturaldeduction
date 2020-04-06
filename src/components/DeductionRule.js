@@ -1,6 +1,6 @@
 import {  RULE_TYPE_FI, RULE_TYPE, CONJECTIVE, CONJECTIVE_SYMBOL } from '../core/rule.js'
 import { Placeholder, PlaceholderDimension, PlaceholderType } from './Placeholder.js'
-import { GLOBAL_SETTINGS, setFillStyle, fillText, line } from '../core/graphics.js'
+import { GLOBAL_SETTINGS, setFillStyle, fillText, fillSelected,line } from '../core/graphics.js'
 import { EVENT_TYPE } from '../core/engine.js'
 import GameObject from './GameObject.js'
 
@@ -75,8 +75,10 @@ const getPlaceholderAmount = (ruleType, conjective) => {
 }
 
 class DeductionRule extends GameObject {
-    constructor(x, y, ruleType, conjective) {
+    constructor(id, x, y, ruleType, conjective) {
         super();
+        this.id = id
+
         this.position = { x, y };
         this.ruleType = ruleType;
         this.conjective = conjective;
@@ -84,10 +86,15 @@ class DeductionRule extends GameObject {
         // Settings
         this.dragged = false;
         this.color = "#000"
-        this.spacing = { x: 40,  y: 4, text: 4 };
+        this.spacing = { x: 40,  y: 4, text: 4, selected: 4 };
+        
+        // Selecting a rule
+        this.selectedLength = 10
+        this.selected = false
+        this.hoveredOver = false
 
         // Components
-        this.text = { value: getRuleName(this.ruleType, this.conjective), x: 0, y: 0 }
+        this.text = { value: getRuleName(this.ruleType, this.conjective), x: 0, y: 0, width: 36 }
         this.edge = { sx: 0, sy: 0, ex: 0, ey: 0 }
 
         this.createPlaceholders()
@@ -169,12 +176,27 @@ class DeductionRule extends GameObject {
         return lastPlaceholder.position.x + lastPlaceholder.getWidth() - this.position.x;
     }
 
+    drawSelectionBox(ctx) {
+        fillSelected(ctx, 
+            this.position.x - this.spacing.selected, 
+            this.position.y - this.spacing.selected, 
+            this.getWidth() + this.text.width + this.spacing.selected, 
+            // TODO: replace one place holder with the maximum size of the rule
+            PlaceholderDimension.height * 2 + this.spacing.y * 3 + this.spacing.selected, 
+            this.selectedLength
+        );
+    }
+
     render(ctx) {
         this.result.render(ctx);
         this.placeholders.forEach(placeholder => {
             placeholder.render(ctx);
         });
         
+        if (this.selected  || this.hoveredOver) {
+            this.drawSelectionBox(ctx)
+        }
+
         setFillStyle(ctx, this.color);
         fillText(ctx, this.text.value, this.text.x, this.text.y);
         line(ctx, this.edge.sx, this.edge.sy, this.edge.ex, this.edge.ey);
@@ -187,12 +209,37 @@ class DeductionRule extends GameObject {
             placeholder.onEvent(type, event);
         })
 
-        if (type == EVENT_TYPE.mouseDown && this.collides(event.x, event.y)) {
+        // Touch screen
+        if (type === EVENT_TYPE.touchStart || 
+            type === EVENT_TYPE.touchMove ||
+            type === EVENT_TYPE.touchCancel) {
+            
+            const { pageX, pageY } = event.targetTouches[0]
+            
+            if (type === EVENT_TYPE.touchStart && this.collides(pageX, pageY)) {
+                this.dragged = true;
+            }
+            
+            if(this.dragged && type == EVENT_TYPE.touchMove) {
+                this.updatePosition(pageX - this.getWidth()/2, pageY - PlaceholderDimension.height - this.spacing.y);
+            }
+        } else if (type === EVENT_TYPE.touchEnd) {
+            this.dragged = false;
+        }
+
+        // Desktop
+        let collides = this.collides(event.x, event.y)
+        if (type == EVENT_TYPE.mouseDown && collides) {
             this.dragged = true;
+            this.selected = true;
+        } else if (type == EVENT_TYPE.mouseDown && !collides) {
+            this.selected = false;
         } else if (type == EVENT_TYPE.mouseUp) {
             this.dragged = false;
         }
-        
+
+        this.hoveredOver = collides
+
         if(this.dragged && type == EVENT_TYPE.mouseMove) {
             this.updatePosition(event.x - this.getWidth()/2, event.y - PlaceholderDimension.height - this.spacing.y);
         }
@@ -204,8 +251,8 @@ class DeductionRule extends GameObject {
      * @param {int} y Y-coordinate
      */
     collides(x, y) {
-        if (this.position.x < x && x < this.edge.ex) {
-            if (this.edge.sy - this.spacing.y < y &&  y < this.edge.sy + this.spacing.y) {
+        if (this.position.x < x && x < this.position.x + this.getWidth() + this.text.width + this.spacing.selected) {
+            if (this.position.y < y && y < this.position.y + PlaceholderDimension.height * 2 + this.spacing.y * 2 + this.spacing.selected) {
                 return true;
             }
         }
