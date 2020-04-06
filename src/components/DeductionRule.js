@@ -88,6 +88,7 @@ class DeductionRule extends GameObject {
         this.color = "#000"
         this.spacing = { x: 40,  y: 4, text: 4, selected: 4 };
         this.selectedLength = 10
+        this.selected = false
 
         // Components
         this.text = { value: getRuleName(this.ruleType, this.conjective), x: 0, y: 0, width: 36 }
@@ -178,13 +179,16 @@ class DeductionRule extends GameObject {
             placeholder.render(ctx);
         });
         
-        fillSelected(ctx, 
-            this.position.x - this.spacing.selected, 
-            this.position.y - this.spacing.selected, 
-            this.getWidth() + this.text.width + this.spacing.selected, 
-            PlaceholderDimension.height * 2 + this.spacing.y * 2 + this.spacing.selected, // TODO: replace one place holder with the maximum size of the rule
-            this.selectedLength
-        );
+        if (this.selected) {
+            fillSelected(ctx, 
+                this.position.x - this.spacing.selected, 
+                this.position.y - this.spacing.selected, 
+                this.getWidth() + this.text.width + this.spacing.selected, 
+                // TODO: replace one place holder with the maximum size of the rule
+                PlaceholderDimension.height * 2 + this.spacing.y * 3 + this.spacing.selected, 
+                this.selectedLength
+            );
+        }
         
         setFillStyle(ctx, this.color);
         fillText(ctx, this.text.value, this.text.x, this.text.y);
@@ -219,6 +223,9 @@ class DeductionRule extends GameObject {
         // Desktop
         if (type == EVENT_TYPE.mouseDown && this.collides(event.x, event.y)) {
             this.dragged = true;
+            this.selected = true;
+        } else if (type == EVENT_TYPE.mouseDown && !this.collides(event.x, event.y)) {
+            this.selected = false;
         } else if (type == EVENT_TYPE.mouseUp) {
             this.dragged = false;
         }
