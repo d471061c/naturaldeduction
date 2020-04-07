@@ -217,52 +217,64 @@ class DeductionRule extends GameObject {
     }
 
     onEvent(type, event, rules) {
-        this.placeholders.forEach(placeholder => {
-            placeholder.onEvent(type, event, rules);
-        })
-
-
         // Desktop
         if (!this.connected) {
+            // Disconnected
             // Touch screen events
             if (type === EVENT_TYPE.touchStart || 
                 type === EVENT_TYPE.touchMove ||
                 type === EVENT_TYPE.touchCancel) {
-                
-                const { pageX, pageY } = event.targetTouches[0]
-                
-                if (type === EVENT_TYPE.touchStart && this.collides(pageX, pageY)) {
-                    this.dragged = true;
-                    this.selected = true;
-                } else {
+                    const { pageX, pageY } = event.targetTouches[0]
+                    
+                    if (type === EVENT_TYPE.touchStart && this.collides(pageX, pageY)) {
+                        this.dragged = true;
+                        this.selected = true;
+                        return;
+                    } else {
+                        this.selected = false;
+                    }
+                    
+                    if(this.dragged && type == EVENT_TYPE.touchMove) {
+                        this.updatePosition(pageX - this.getWidth()/2, pageY - PlaceholderDimension.height - this.spacing.y);
+                        this.selected = true;
+                    }
+                } else if (type === EVENT_TYPE.touchEnd) {
+                    this.dragged = false;
                     this.selected = false;
                 }
                 
-                if(this.dragged && type == EVENT_TYPE.touchMove) {
-                    this.updatePosition(pageX - this.getWidth()/2, pageY - PlaceholderDimension.height - this.spacing.y);
-                    this.selected = true;
-                }
-            } else if (type === EVENT_TYPE.touchEnd) {
-                this.dragged = false;
-                this.selected = false;
-            }
-            
             // Desktop events
             let collides = this.collides(event.x, event.y)
             if (type == EVENT_TYPE.mouseDown && collides) {
                 this.dragged = true;
                 this.selected = true;
+                return;
             } else if (type == EVENT_TYPE.mouseDown && !collides) {
                 this.selected = false;
             } else if (type == EVENT_TYPE.mouseUp) {
                 this.dragged = false;
             }
-
+            
             this.hoveredOver = collides
             if(this.dragged && type == EVENT_TYPE.mouseMove) {
                 this.updatePosition(event.x - this.getWidth()/2, event.y - PlaceholderDimension.height - this.spacing.y);
             }
+        } else {
+            // Connected
+            let collides = this.collides(event.x, event.y)
+            if (type == EVENT_TYPE.mouseDown && collides) {
+                this.dragged = true;
+            } else if (type == EVENT_TYPE.mouseUp && collides && this.dragged) {
+                this.dragged = false;
+            } else if (type == EVENT_TYPE.mouseMove && collides && this.dragged) {
+                this.connected = false;
+                this.selected = true;
+            }
         } 
+
+        this.placeholders.forEach(placeholder => {
+            placeholder.onEvent(type, event, rules);
+        })
 
     }
 

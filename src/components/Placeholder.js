@@ -105,6 +105,11 @@ class Placeholder extends GameObject {
             } // TODO: Add connection to touch screen
         } else if (this.type === PlaceholderType.rule) {
             this.value.onEvent(type, event, rules);
+            if (!this.value.connected) {
+                rules[Math.random().toString(36).substring(7)] = this.value
+                this.type = PlaceholderType.empty;
+                this.value = null
+            }
         }
     }
 }
