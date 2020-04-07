@@ -1,6 +1,5 @@
 import { runEngine, setupCanvas } from './core/engine.js'
 import { RULE_TYPE, CONJECTIVE } from './core/rule.js'
-import { DeductionRule } from './components/DeductionRule.js'
 import { RuleEditor } from './components/RuleEditor.js'
 
 const editor = new RuleEditor();
