@@ -93,12 +93,24 @@ class DeductionRule extends GameObject {
         this.selected = false
         this.hoveredOver = false
 
+        // Connection state
+        this.connected = false
+
         // Components
         this.text = { value: getRuleName(this.ruleType, this.conjective), x: 0, y: 0, width: 36 }
         this.edge = { sx: 0, sy: 0, ex: 0, ey: 0 }
 
         this.createPlaceholders()
         this.updateComponents()
+    }
+
+    /**
+     * Set rule to be connected to other rule
+     */
+    setConnected() {
+        this.connected = true
+        this.selected = false
+        this.dragged = false
     }
 
     /**
@@ -193,7 +205,7 @@ class DeductionRule extends GameObject {
             placeholder.render(ctx);
         });
         
-        if (this.selected  || this.hoveredOver) {
+        if (!this.connected && (this.selected  || this.hoveredOver)) {
             this.drawSelectionBox(ctx)
         }
 
@@ -204,45 +216,54 @@ class DeductionRule extends GameObject {
         ctx.stroke();
     }
 
-    onEvent(type, event) {
+    onEvent(type, event, rules) {
         this.placeholders.forEach(placeholder => {
-            placeholder.onEvent(type, event);
+            placeholder.onEvent(type, event, rules);
         })
 
-        // Touch screen
-        if (type === EVENT_TYPE.touchStart || 
-            type === EVENT_TYPE.touchMove ||
-            type === EVENT_TYPE.touchCancel) {
-            
-            const { pageX, pageY } = event.targetTouches[0]
-            
-            if (type === EVENT_TYPE.touchStart && this.collides(pageX, pageY)) {
-                this.dragged = true;
-            }
-            
-            if(this.dragged && type == EVENT_TYPE.touchMove) {
-                this.updatePosition(pageX - this.getWidth()/2, pageY - PlaceholderDimension.height - this.spacing.y);
-            }
-        } else if (type === EVENT_TYPE.touchEnd) {
-            this.dragged = false;
-        }
 
         // Desktop
-        let collides = this.collides(event.x, event.y)
-        if (type == EVENT_TYPE.mouseDown && collides) {
-            this.dragged = true;
-            this.selected = true;
-        } else if (type == EVENT_TYPE.mouseDown && !collides) {
-            this.selected = false;
-        } else if (type == EVENT_TYPE.mouseUp) {
-            this.dragged = false;
-        }
+        if (!this.connected) {
+            // Touch screen events
+            if (type === EVENT_TYPE.touchStart || 
+                type === EVENT_TYPE.touchMove ||
+                type === EVENT_TYPE.touchCancel) {
+                
+                const { pageX, pageY } = event.targetTouches[0]
+                
+                if (type === EVENT_TYPE.touchStart && this.collides(pageX, pageY)) {
+                    this.dragged = true;
+                    this.selected = true;
+                } else {
+                    this.selected = false;
+                }
+                
+                if(this.dragged && type == EVENT_TYPE.touchMove) {
+                    this.updatePosition(pageX - this.getWidth()/2, pageY - PlaceholderDimension.height - this.spacing.y);
+                    this.selected = true;
+                }
+            } else if (type === EVENT_TYPE.touchEnd) {
+                this.dragged = false;
+                this.selected = false;
+            }
+            
+            // Desktop events
+            let collides = this.collides(event.x, event.y)
+            if (type == EVENT_TYPE.mouseDown && collides) {
+                this.dragged = true;
+                this.selected = true;
+            } else if (type == EVENT_TYPE.mouseDown && !collides) {
+                this.selected = false;
+            } else if (type == EVENT_TYPE.mouseUp) {
+                this.dragged = false;
+            }
 
-        this.hoveredOver = collides
+            this.hoveredOver = collides
+            if(this.dragged && type == EVENT_TYPE.mouseMove) {
+                this.updatePosition(event.x - this.getWidth()/2, event.y - PlaceholderDimension.height - this.spacing.y);
+            }
+        } 
 
-        if(this.dragged && type == EVENT_TYPE.mouseMove) {
-            this.updatePosition(event.x - this.getWidth()/2, event.y - PlaceholderDimension.height - this.spacing.y);
-        }
     }
 
     /**

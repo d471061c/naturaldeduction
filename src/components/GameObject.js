@@ -16,8 +16,9 @@ class GameObject {
      * Handle the event from the event listener
      * @param {EVENT_TYPE} type Type of the event, e.g. mouseMove
      * @param {window.event} event Event from the event listener
+     * @param {[rules]} rules An array of rules in the game
      */
-    onEvent(type, event) {}
+    onEvent(type, event, rules) {}
 }
 
 export default GameObject

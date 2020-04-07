@@ -20,7 +20,7 @@ class RuleEditor extends GameObject {
 
     onEvent(type, event) {
         for (let rule of Object.values(this.rules)) {
-            rule.onEvent(type, event)
+            rule.onEvent(type, event, this.rules)
         }
     }
 

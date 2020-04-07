@@ -80,7 +80,19 @@ class Placeholder extends GameObject {
         }
     }
 
-    onEvent(type, event) {
+    handleRuleConnection(rules, x, y) {
+        if (this.collides(x, y)) {
+            let [ruleId, rule] = Object.entries(rules).filter(([_, rule]) => rule.selected)[0]
+            if (rule) {
+                this.value = rule 
+                this.value.setConnected()
+                this.type = PlaceholderType.rule
+                delete rules[ruleId]
+            }
+        }
+    }
+
+    onEvent(type, event, rules) {
         if (this.type === PlaceholderType.empty) {
             if (type === EVENT_TYPE.mouseDown) {
                 if (this.collides(event.x, event.y)) {
@@ -88,9 +100,11 @@ class Placeholder extends GameObject {
                 }
             } else if (type === EVENT_TYPE.mouseMove ) {
                 this.color = this.collides(event.x, event.y) ? this.hoverColor : this.defaultColor;
-            } 
+            } else if (type === EVENT_TYPE.mouseUp) {
+                this.handleRuleConnection(rules, event.x, event.y);
+            } // TODO: Add connection to touch screen
         } else if (this.type === PlaceholderType.rule) {
-            this.value.onEvent(type, event);
+            this.value.onEvent(type, event, rules);
         }
     }
 }
