@@ -130,17 +130,17 @@ class DeductionRule extends GameObject {
      */
     createPlaceholders() {
         this.placeholderAmount = getPlaceholderAmount(this.ruleType, this.conjective);
-        this.placeholders = [new Placeholder(this.position.x, this.position.y)];
+        this.placeholders = [new Placeholder(this, this.position.x, this.position.y)];
 
         for (var i = 1; i < this.placeholderAmount; i++) {
             var newX = (this.placeholders[i - 1].getWidth() + this.spacing.x) * i + this.position.x;
             var newY = this.position.y;
-            this.placeholders.push(new Placeholder(newX, newY));
+            this.placeholders.push(new Placeholder(this, newX, newY));
         }
 
         const resultX = this.position.x + this.getWidth() / 2 - PlaceholderDimension.width / 2;
         const resultY = this.position.y + PlaceholderDimension.height + this.spacing.y * 2;
-        this.result = new Placeholder(resultX, resultY);
+        this.result = new Placeholder(this, resultX, resultY);
     }
 
     /**
@@ -217,6 +217,9 @@ class DeductionRule extends GameObject {
     }
 
     onEvent(type, event, rules) {
+        this.placeholders.forEach(placeholder => {
+            placeholder.onEvent(type, event, rules);
+        })
         // Desktop
         if (!this.connected) {
             // Disconnected
@@ -261,20 +264,23 @@ class DeductionRule extends GameObject {
             }
         } else {
             // Connected
-            let collides = this.collides(event.x, event.y)
-            if (type == EVENT_TYPE.mouseDown && collides) {
-                this.dragged = true;
-            } else if (type == EVENT_TYPE.mouseUp && collides && this.dragged) {
+            if (this.collides(event.x, event.y)) {
+                if (type == EVENT_TYPE.mouseDown) {
+                    this.dragged = true;
+                } 
+                if (this.dragged) {
+                    if (type == EVENT_TYPE.mouseUp) {
+                        this.dragged = false;
+                    } else if (type == EVENT_TYPE.mouseMove) {
+                        this.connected = false;
+                        this.selected = true;
+                        return;
+                    }
+                }
+            } else {
                 this.dragged = false;
-            } else if (type == EVENT_TYPE.mouseMove && collides && this.dragged) {
-                this.connected = false;
-                this.selected = true;
             }
-        } 
-
-        this.placeholders.forEach(placeholder => {
-            placeholder.onEvent(type, event, rules);
-        })
+        }
 
     }
 
