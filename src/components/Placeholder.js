@@ -120,8 +120,9 @@ class Placeholder extends GameObject {
             if (!this.value.connected) {
                 rules[this.value.id] = this.value
                 this.type = PlaceholderType.empty;
-                this.rule.dragged = false
-                this.value = null
+                this.rule.dragged = false;
+                this.rule.selected = false;
+                this.value = null;
             }
         }
     }
