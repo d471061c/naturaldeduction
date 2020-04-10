@@ -8,7 +8,7 @@ class RuleEditor extends GameObject {
     }
 
     addRule(x, y, ruleType, conjective) {
-        const ruleId = Object.keys(this.rules).length
+        const ruleId = Math.random().toString(36).substring(7)
         this.rules[ruleId] = new DeductionRule(ruleId, x, y, ruleType, conjective)
     }
 
@@ -20,7 +20,7 @@ class RuleEditor extends GameObject {
 
     onEvent(type, event) {
         for (let rule of Object.values(this.rules)) {
-            rule.onEvent(type, event)
+            rule.onEvent(type, event, this.rules)
         }
     }
 

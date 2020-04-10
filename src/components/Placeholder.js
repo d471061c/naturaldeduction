@@ -15,7 +15,7 @@ const PlaceholderType = {
 };
 
 class Placeholder extends GameObject {
-    constructor(x, y) {
+    constructor(rule, x, y) {
         super();
         this.position = { x, y };
         this.width = PlaceholderDimension.width;
@@ -29,6 +29,9 @@ class Placeholder extends GameObject {
         this.defaultColor = "#ccc";
         this.hoverColor = "#aaa"
         this.color = this.defaultColor
+
+        // Rule of which the placeholder is part of
+        this.rule = rule
     }
 
     /**
@@ -80,17 +83,47 @@ class Placeholder extends GameObject {
         }
     }
 
-    onEvent(type, event) {
+    /**
+     * Connect rule if there exists an active rule and 
+     * the placeholder collides with the given x and y coordinates
+     * @param {[rule]} rules Array of rules given from the rule editor
+     * @param {int} x X-coordinate
+     * @param {int} y Y-coordinate
+     */
+    handleRuleConnection(rules, x, y) {
+        if (this.collides(x, y)) {
+            let [ruleId, rule] = Object.entries(rules).filter(([_, rule]) => rule.selected)[0]
+            if (rule && ruleId !== this.rule.id) {
+                this.value = rule 
+                this.value.setConnected()
+                this.type = PlaceholderType.rule
+                delete rules[ruleId]
+            }
+        }
+    }
+
+    onEvent(type, event, rules) {
         if (this.type === PlaceholderType.empty) {
             if (type === EVENT_TYPE.mouseDown) {
                 if (this.collides(event.x, event.y)) {
                     alert("To be implemented")
-                }
+                } 
             } else if (type === EVENT_TYPE.mouseMove ) {
                 this.color = this.collides(event.x, event.y) ? this.hoverColor : this.defaultColor;
+            } else if (type === EVENT_TYPE.mouseUp && this.collides(event.x, event.y)) {
+                this.handleRuleConnection(rules, event.x, event.y);
             } 
+            
+            // TODO: Add connection to touch screen
         } else if (this.type === PlaceholderType.rule) {
-            this.value.onEvent(type, event);
+            this.value.onEvent(type, event, rules);
+            if (!this.value.connected) {
+                rules[this.value.id] = this.value
+                this.type = PlaceholderType.empty;
+                this.rule.dragged = false;
+                this.rule.selected = false;
+                this.value = null;
+            }
         }
     }
 }
