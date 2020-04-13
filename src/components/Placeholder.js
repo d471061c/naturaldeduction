@@ -1,32 +1,32 @@
 import { setFillStyle, fillRectangle } from '../core/graphics.js'
 import { EVENT_TYPE } from '../core/engine.js'
-import GameObject from './GameObject.js';
+import GameObject from './GameObject.js'
 
 // Default width and height of the placeholder
 const PlaceholderDimension = {
     height: 20,
     width: 20
-};
+}
 
 const PlaceholderType = {
     empty: 1,
     symbol: 2,
     rule: 3
-};
+}
 
 class Placeholder extends GameObject {
     constructor(rule, x, y) {
-        super();
-        this.position = { x, y };
-        this.width = PlaceholderDimension.width;
-        this.height = PlaceholderDimension.height;
+        super()
+        this.position = { x, y }
+        this.width = PlaceholderDimension.width
+        this.height = PlaceholderDimension.height
 
         // Settings
-        this.type = PlaceholderType.empty;
-        this.value = null;
+        this.type = PlaceholderType.empty
+        this.value = null
 
         // Colors
-        this.defaultColor = "#ccc";
+        this.defaultColor = "#ccc"
         this.hoverColor = "#aaa"
         this.color = this.defaultColor
 
@@ -42,7 +42,7 @@ class Placeholder extends GameObject {
      */
     collides(x, y) {
         return this.position.x <= x && x <= this.position.x + this.width && 
-               this.position.y <= y && y <= this.position.y + this.height;
+               this.position.y <= y && y <= this.position.y + this.height
     }
 
     /**
@@ -50,9 +50,9 @@ class Placeholder extends GameObject {
      */
     getWidth() {
         if (this.type === PlaceholderType.rule) {
-            return this.value.getWidth();
+            return this.value.getWidth()
         }
-        return this.width;
+        return this.width
     }
 
     /**
@@ -61,25 +61,25 @@ class Placeholder extends GameObject {
      * @param {int} y New Y-coordinate
      */
     updatePosition(x, y) {
-        this.position.x = x;
-        this.position.y = y;
+        this.position.x = x
+        this.position.y = y
         if (this.type === PlaceholderType.rule) {
-            this.value.updatePosition(this.position.x, this.position.y);
+            this.value.updatePosition(this.position.x, this.position.y)
         }
     }
 
     render(ctx) {
         switch(this.type) {
-            case PlaceholderType.empty:
-                setFillStyle(ctx, this.color);
-                fillRectangle(ctx, this.position.x, this.position.y, this.width, this.height);
-                break;
-            case PlaceholderType.symbol:
-                // TODO: Implement
-                break;
-            case PlaceholderType.rule:
-                this.value.render(ctx);
-                break;
+        case PlaceholderType.empty:
+            setFillStyle(ctx, this.color)
+            fillRectangle(ctx, this.position.x, this.position.y, this.width, this.height)
+            break
+        case PlaceholderType.symbol:
+            // TODO: Implement
+            break
+        case PlaceholderType.rule:
+            this.value.render(ctx)
+            break
         }
     }
 
@@ -109,20 +109,20 @@ class Placeholder extends GameObject {
                     alert("To be implemented")
                 } 
             } else if (type === EVENT_TYPE.mouseMove ) {
-                this.color = this.collides(event.x, event.y) ? this.hoverColor : this.defaultColor;
+                this.color = this.collides(event.x, event.y) ? this.hoverColor : this.defaultColor
             } else if (type === EVENT_TYPE.mouseUp && this.collides(event.x, event.y)) {
-                this.handleRuleConnection(rules, event.x, event.y);
+                this.handleRuleConnection(rules, event.x, event.y)
             } 
             
             // TODO: Add connection to touch screen
         } else if (this.type === PlaceholderType.rule) {
-            this.value.onEvent(type, event, rules);
+            this.value.onEvent(type, event, rules)
             if (!this.value.connected) {
                 rules[this.value.id] = this.value
-                this.type = PlaceholderType.empty;
-                this.rule.dragged = false;
-                this.rule.selected = false;
-                this.value = null;
+                this.type = PlaceholderType.empty
+                this.rule.dragged = false
+                this.rule.selected = false
+                this.value = null
             }
         }
     }

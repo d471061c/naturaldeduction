@@ -8,7 +8,7 @@ const EVENT_TYPE = {
     touchEnd: 5,
     touchCancel: 6,
     touchMove: 7
-};
+}
 
 
 /**
@@ -16,8 +16,8 @@ const EVENT_TYPE = {
  * @param {canvas} canvas canvas (html-element)
  */
 const resizeCanvasToScreen = (canvas) => () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.width = window.innerWidth
+    canvas.height = window.innerHeight
 }
 
 /**
@@ -25,17 +25,17 @@ const resizeCanvasToScreen = (canvas) => () => {
  * @param {string} canvasId Id for newly created canvas
  */
 const setupCanvas = (canvasId) => {
-    const canvas = document.createElement("canvas");
-    canvas.setAttribute("id", canvasId);
+    const canvas = document.createElement("canvas")
+    canvas.setAttribute("id", canvasId)
 
     const resize = resizeCanvasToScreen(canvas)
     resize() 
 
-    window.addEventListener('resize', resize, false);
-    window.addEventListener('orientationchange', resize, false);
+    window.addEventListener('resize', resize, false)
+    window.addEventListener('orientationchange', resize, false)
 
-    document.body.appendChild(canvas);
-    const ctx = canvas.getContext("2d");
+    document.body.appendChild(canvas)
+    const ctx = canvas.getContext("2d")
 
     return { canvas, ctx }
 }
@@ -45,8 +45,8 @@ const setupCanvas = (canvasId) => {
  * @param {event} event Event from a listener
  */
 const catchEvent = (event) => {
-    event.stopPropagation();
-    event.preventDefault();
+    event.stopPropagation()
+    event.preventDefault()
 }
 
 /**
@@ -59,78 +59,78 @@ const runEngine = (ctx, canvas, content) => {
     window.onload = () => {
         const update = () => {
             content.forEach((object) => {
-                object.update();
-            });
+                object.update()
+            })
         }
     
         const render = (ctx) => {
-            clearCanvas(ctx, canvas);
-            ctx.beginPath();
-            ctx.save();
+            clearCanvas(ctx, canvas)
+            ctx.beginPath()
+            ctx.save()
     
             content.forEach((object) => {
-                object.render(ctx);
-            });
+                object.render(ctx)
+            })
     
-            ctx.restore();
+            ctx.restore()
         }
     
         const mainloop = () => {
-            update();
-            render(ctx);
-            requestAnimationFrame(mainloop);
+            update()
+            render(ctx)
+            requestAnimationFrame(mainloop)
         }
     
         canvas.addEventListener('mousedown', (event) => {
-            catchEvent(event);
+            catchEvent(event)
             content.forEach((object) => {
-                object.onEvent(EVENT_TYPE.mouseDown, event);
-            });
-        });
+                object.onEvent(EVENT_TYPE.mouseDown, event)
+            })
+        })
     
         canvas.addEventListener('mouseup', (event) => {
-            catchEvent(event);
+            catchEvent(event)
             content.forEach((object) => {
-                object.onEvent(EVENT_TYPE.mouseUp, event);
-            });
-        });
+                object.onEvent(EVENT_TYPE.mouseUp, event)
+            })
+        })
     
         canvas.addEventListener('mousemove', (event) => {
-            catchEvent(event);
+            catchEvent(event)
             content.forEach((object) => {
-                object.onEvent(EVENT_TYPE.mouseMove, event);
-            });
-        });
+                object.onEvent(EVENT_TYPE.mouseMove, event)
+            })
+        })
     
         canvas.addEventListener('touchstart', (event) => {
-            catchEvent(event);
+            catchEvent(event)
             content.forEach((object) => {
-                object.onEvent(EVENT_TYPE.touchStart, event);
-            });
-        });
+                object.onEvent(EVENT_TYPE.touchStart, event)
+            })
+        })
     
         canvas.addEventListener('touchend', (event) => {
-            catchEvent(event);
+            catchEvent(event)
             content.forEach((object) => {
-                object.onEvent(EVENT_TYPE.touchEnd, event);
-            });
-        });
+                object.onEvent(EVENT_TYPE.touchEnd, event)
+            })
+        })
     
         canvas.addEventListener('touchcancel', (event) => {
-            catchEvent(event);
+            catchEvent(event)
             content.forEach((object) => {
-                object.onEvent(EVENT_TYPE.touchCancel, event);
-            });
-        });
+                object.onEvent(EVENT_TYPE.touchCancel, event)
+            })
+        })
     
         canvas.addEventListener('touchmove', (event) => {
-            catchEvent(event);
+            catchEvent(event)
             content.forEach((object) => {
-                object.onEvent(EVENT_TYPE.touchMove, event);
-            });
-        });
+                object.onEvent(EVENT_TYPE.touchMove, event)
+            })
+        })
         
-        mainloop();
+        mainloop()
     }
 }
 

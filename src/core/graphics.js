@@ -4,7 +4,7 @@ const GLOBAL_SETTINGS = {
     fontAlign: 'center',
     fontColor: '#000',
     defaultFillStyle: '#000'
-};
+}
 
 /**
  * Fill rectangle to given (x, y)-coordinate
@@ -15,8 +15,8 @@ const GLOBAL_SETTINGS = {
  * @param {int} height Height of the rectangle
  */
 const fillRectangle = (ctx, x, y, width, height) => {
-    ctx.fillRect(x, y, width, height);
-    ctx.stroke();
+    ctx.fillRect(x, y, width, height)
+    ctx.stroke()
 }
 
 /**
@@ -28,9 +28,9 @@ const fillRectangle = (ctx, x, y, width, height) => {
  * @param {int} ey Ending Y-coordinate
  */
 const line = (ctx, sx, sy, ex, ey) => {
-    ctx.moveTo(sx, sy);
-    ctx.lineTo(ex, ey);
-    ctx.stroke();
+    ctx.moveTo(sx, sy)
+    ctx.lineTo(ex, ey)
+    ctx.stroke()
 }
 
 /**
@@ -44,17 +44,17 @@ const line = (ctx, sx, sy, ex, ey) => {
  */
 const fillSelected = (ctx, x, y, width, height, length) => {
     // top left corner
-    line(ctx, x, y, x + length, y);
-    line(ctx, x, y, x, y + length);
+    line(ctx, x, y, x + length, y)
+    line(ctx, x, y, x, y + length)
     // top right corner
-    line(ctx, x + width, y, x + width - length, y);
-    line(ctx, x + width, y, x + width, y + length);
+    line(ctx, x + width, y, x + width - length, y)
+    line(ctx, x + width, y, x + width, y + length)
     // lower left corner 
-    line(ctx, x, y + height, x + length, y + height);
-    line(ctx, x, y + height, x, y + height - length);
+    line(ctx, x, y + height, x + length, y + height)
+    line(ctx, x, y + height, x, y + height - length)
     // lower right corner
-    line(ctx, x + width, y + height, x + width - length, y + height);
-    line(ctx, x + width, y + height, x + width, y - length + height);
+    line(ctx, x + width, y + height, x + width - length, y + height)
+    line(ctx, x + width, y + height, x + width, y - length + height)
 }
 
 /**
@@ -65,9 +65,9 @@ const fillSelected = (ctx, x, y, width, height, length) => {
  * @param {int} y Y-coordinate of the text
  */
 const fillText = (ctx, text, x, y) => {
-    ctx.font = `${GLOBAL_SETTINGS.fontSize}px ${GLOBAL_SETTINGS.fontStyle}`;
-    ctx.textAlign = GLOBAL_SETTINGS.FontAlign; 
-    ctx.fillText(text, x, y);
+    ctx.font = `${GLOBAL_SETTINGS.fontSize}px ${GLOBAL_SETTINGS.fontStyle}`
+    ctx.textAlign = GLOBAL_SETTINGS.FontAlign 
+    ctx.fillText(text, x, y)
 }
 
 /**
@@ -76,7 +76,7 @@ const fillText = (ctx, text, x, y) => {
  * @param {string} fillStyle Fill style for the context
  */
 const setFillStyle = (ctx, fillStyle) => {
-    ctx.fillStyle = fillStyle;
+    ctx.fillStyle = fillStyle
 }
 
 /**
@@ -84,7 +84,7 @@ const setFillStyle = (ctx, fillStyle) => {
  * @param {context2d} ctx context2d from canvas
  */
 const resetFillStyle = (ctx) => {
-    setFillStyle(ctx, GLOBAL_SETTINGS.defaultFillStyle);
+    setFillStyle(ctx, GLOBAL_SETTINGS.defaultFillStyle)
 }
 
 /**
@@ -94,7 +94,7 @@ const resetFillStyle = (ctx) => {
  */
 const clearCanvas = (ctx, canvas) => {
     resetFillStyle(ctx)
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
 }
 
 export {
