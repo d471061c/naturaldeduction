@@ -4,7 +4,7 @@ const CONJECTIVE = {
     implication: 3,
     equivelance: 4,
     negation: 5
-};
+}
 
 const CONJECTIVE_SYMBOL = {
     and: '∧',
@@ -12,22 +12,22 @@ const CONJECTIVE_SYMBOL = {
     implication: '→',
     equivelance: '↔',
     negation: '¬'
-};
+}
 
 const RULE_TYPE = {
     introduction: 1,
     elimination: 2
-};
+}
 
 const RULE_TYPE_EN = {
     introduction : 'I',
     elimination : 'E'
-};
+}
 
 const RULE_TYPE_FI = {
     introduction : 'T',
     elimination : 'E'
-};
+}
 
 export {
     CONJECTIVE,

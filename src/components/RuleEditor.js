@@ -1,9 +1,9 @@
-import GameObject from './GameObject.js';
-import { DeductionRule } from './DeductionRule.js';
+import GameObject from './GameObject.js'
+import { DeductionRule } from './DeductionRule.js'
 
 class RuleEditor extends GameObject {
     constructor () {
-        super();
+        super()
         this.rules = {}
     }
 
@@ -26,7 +26,7 @@ class RuleEditor extends GameObject {
 
     update () {
         for (let rule of Object.values(this.rules)) {
-            rule.update();
+            rule.update()
         }
     }
 }
