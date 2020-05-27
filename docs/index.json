@@ -1,0 +1,2732 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/components/DeductionRule.js",
+    "content": "import {  RULE_TYPE_FI, RULE_TYPE, CONJECTIVE, CONJECTIVE_SYMBOL } from '../core/rule.js'\nimport { Placeholder, PlaceholderDimension, PlaceholderType } from './Placeholder.js'\nimport { GLOBAL_SETTINGS, setFillStyle, fillText, fillSelected,line } from '../core/graphics.js'\nimport { EVENT_TYPE } from '../core/engine.js'\nimport GameObject from './GameObject.js'\n\n/**\n * Returns an identifier of a rule as a string, e.g. \"vE\" (elimination, or)\n * @param {RULE_TYPE} ruleType Type of the rule\n * @param {CONJECTIVE} conjective Conjective of the rule\n */\nconst getRuleName = (ruleType, conjective) => {\n    if (ruleType === RULE_TYPE.introduction) {\n        switch (conjective) {\n        case CONJECTIVE.and:\n            return CONJECTIVE_SYMBOL.and + RULE_TYPE_FI.introduction\n        case CONJECTIVE.equivelance:\n            return CONJECTIVE_SYMBOL.equivelance + RULE_TYPE_FI.introduction\n        case CONJECTIVE.implication:\n            return CONJECTIVE_SYMBOL.implication + RULE_TYPE_FI.introduction\n        case CONJECTIVE.negation:\n            return CONJECTIVE_SYMBOL.negation + RULE_TYPE_FI.introduction\n        case CONJECTIVE.or:\n            return CONJECTIVE_SYMBOL.or + RULE_TYPE_FI.introduction\n        }\n    } else if (ruleType === RULE_TYPE.elimination) {\n        switch (conjective) {\n        case CONJECTIVE.and:\n            return CONJECTIVE_SYMBOL.and + RULE_TYPE_FI.elimination\n        case CONJECTIVE.equivelance:\n            return CONJECTIVE_SYMBOL.equivelance + RULE_TYPE_FI.elimination\n        case CONJECTIVE.implication:\n            return CONJECTIVE_SYMBOL.implication + RULE_TYPE_FI.elimination\n        case CONJECTIVE.negation:\n            return CONJECTIVE_SYMBOL.negation + RULE_TYPE_FI.elimination\n        case CONJECTIVE.or:\n            return CONJECTIVE_SYMBOL.or + RULE_TYPE_FI.elimination\n        }\n    }\n}\n\n/**\n * Returns the amount of placeholders required on the top of the rule (as an input)\n * @param {RULE_TYPE} ruleType Type of the rule\n * @param {CONJECTIVE} conjective Conjective of the rule\n */\nconst getPlaceholderAmount = (ruleType, conjective) => {\n    if (ruleType === RULE_TYPE.introduction) {\n        switch (conjective) {\n        case CONJECTIVE.and:\n            return 2\n        case CONJECTIVE.equivelance:\n            return 2\n        case CONJECTIVE.implication:\n            return 1\n        case CONJECTIVE.negation:\n            return 1\n        case CONJECTIVE.or:\n            return 1\n        }\n    } else if (ruleType === RULE_TYPE.elimination) {\n        switch (conjective) {\n        case CONJECTIVE.and:\n            return 1\n        case CONJECTIVE.equivelance:\n            return 2\n        case CONJECTIVE.implication:\n            return 2\n        case CONJECTIVE.negation:\n            return 1\n        case CONJECTIVE.or:\n            return 3\n        }\n    }\n}\n\nclass DeductionRule extends GameObject {\n    constructor(id, x, y, ruleType, conjective) {\n        super()\n        this.id = id\n\n        this.position = { x, y }\n        this.ruleType = ruleType\n        this.conjective = conjective\n\n        // Settings\n        this.dragged = false\n        this.color = \"#000\"\n        this.spacing = { x: 40,  y: 4, text: 4, selected: 4 }\n        \n        // Selecting a rule\n        this.selectedLength = 10\n        this.selected = false\n        this.hoveredOver = false\n\n        // Connection state\n        this.connected = false\n\n        // Components\n        this.text = { value: getRuleName(this.ruleType, this.conjective), x: 0, y: 0, width: 36 }\n        this.edge = { sx: 0, sy: 0, ex: 0, ey: 0 }\n\n        this.createPlaceholders()\n        this.updateComponents()\n    }\n\n    /**\n     * Set rule to be connected to other rule\n     */\n    setConnected() {\n        this.connected = true\n        this.selected = false\n        this.dragged = false\n    }\n\n    /**\n     * Update positions of components\n     */\n    updateComponents() {\n        this.text.x = this.position.x + this.getWidth() + this.spacing.text\n        this.text.y = this.position.y + PlaceholderDimension.height + GLOBAL_SETTINGS.fontSize / 2\n        this.edge.sx = this.position.x\n        this.edge.sy = this.position.y + PlaceholderDimension.height + this.spacing.y\n        this.edge.ex = this.position.x + this.getWidth()\n        this.edge.ey = this.position.y + PlaceholderDimension.height + this.spacing.y\n    }\n\n    /**\n     * Create placeholders for deduction rule\n     */\n    createPlaceholders() {\n        this.placeholderAmount = getPlaceholderAmount(this.ruleType, this.conjective)\n        this.placeholders = [new Placeholder(this, this.position.x, this.position.y)]\n\n        for (var i = 1; i < this.placeholderAmount; i++) {\n            var newX = (this.placeholders[i - 1].getWidth() + this.spacing.x) * i + this.position.x\n            var newY = this.position.y\n            this.placeholders.push(new Placeholder(this, newX, newY))\n        }\n\n        const resultX = this.position.x + this.getWidth() / 2 - PlaceholderDimension.width / 2\n        const resultY = this.position.y + PlaceholderDimension.height + this.spacing.y * 2\n        this.result = new Placeholder(this, resultX, resultY)\n    }\n\n    /**\n     * Update the position of the placeholder.\n     * @param {int} idx Index of the placeholder\n     */\n    updatePlaceholder(idx) {\n        let newX = this.position.x\n        let newY = this.position.y\n\n        if (idx > 0) {\n            newX = this.placeholders[idx - 1].getWidth() + this.spacing.x + this.placeholders[idx - 1].position.x\n        } \n\n        if (this.placeholders[idx].type === PlaceholderType.rule) {\n            newY = this.position.y - PlaceholderDimension.height - this.spacing.y * 2\n        } \n\n        this.placeholders[idx].updatePosition(newX, newY)\n    }\n\n    /**\n     * Update the position of the rule.\n     * @param {int} x new X-coordinate\n     * @param {int} y new Y-coordinate\n     */\n    updatePosition(x, y) {\n        this.position.x = x\n        this.position.y = y\n        this.updateComponents()\n\n        for (var i = 0; i < this.placeholders.length; i++) {\n            this.updatePlaceholder(i)\n        }\n\n        this.result.updatePosition(this.position.x + this.getWidth() / 2 - PlaceholderDimension.width / 2,\n            this.position.y + PlaceholderDimension.height + this.spacing.y * 2)\n    }\n\n    /**\n     * Returns the width of the rule.\n     */\n    getWidth() {\n        const lastPlaceholder = this.placeholders[this.placeholders.length - 1]\n        return lastPlaceholder.position.x + lastPlaceholder.getWidth() - this.position.x\n    }\n\n    drawSelectionBox(ctx) {\n        fillSelected(ctx, \n            this.position.x - this.spacing.selected, \n            this.position.y - this.spacing.selected, \n            this.getWidth() + this.text.width + this.spacing.selected, \n            // TODO: replace one place holder with the maximum size of the rule\n            PlaceholderDimension.height * 2 + this.spacing.y * 3 + this.spacing.selected, \n            this.selectedLength\n        )\n    }\n\n    render(ctx) {\n        this.result.render(ctx)\n        this.placeholders.forEach(placeholder => {\n            placeholder.render(ctx)\n        })\n        \n        if (!this.connected && (this.selected  || this.hoveredOver)) {\n            this.drawSelectionBox(ctx)\n        }\n\n        setFillStyle(ctx, this.color)\n        fillText(ctx, this.text.value, this.text.x, this.text.y)\n        line(ctx, this.edge.sx, this.edge.sy, this.edge.ex, this.edge.ey)\n\n        ctx.stroke()\n    }\n\n    onEvent(type, event, rules) {\n        this.placeholders.forEach(placeholder => {\n            placeholder.onEvent(type, event, rules)\n        })\n        // Desktop\n        if (!this.connected) {\n            // Disconnected\n            // Touch screen events\n            if (type === EVENT_TYPE.touchStart || \n                type === EVENT_TYPE.touchMove ||\n                type === EVENT_TYPE.touchCancel) {\n                const { pageX, pageY } = event.targetTouches[0]\n                    \n                if (type === EVENT_TYPE.touchStart && this.collides(pageX, pageY)) {\n                    this.dragged = true\n                    this.selected = true\n                    return\n                } else {\n                    this.selected = false\n                }\n                    \n                if(this.dragged && type == EVENT_TYPE.touchMove) {\n                    this.updatePosition(pageX - this.getWidth()/2, pageY - PlaceholderDimension.height - this.spacing.y)\n                    this.selected = true\n                }\n            } else if (type === EVENT_TYPE.touchEnd) {\n                this.dragged = false\n                this.selected = false\n            }\n                \n            // Desktop events\n            let collides = this.collides(event.x, event.y)\n            if (type == EVENT_TYPE.mouseDown && collides) {\n                this.dragged = true\n                this.selected = true\n                return\n            } else if (type == EVENT_TYPE.mouseDown && !collides) {\n                this.selected = false\n            } else if (type == EVENT_TYPE.mouseUp) {\n                this.dragged = false\n            }\n            \n            this.hoveredOver = collides\n            if(this.dragged && type == EVENT_TYPE.mouseMove) {\n                this.updatePosition(event.x - this.getWidth()/2, event.y - PlaceholderDimension.height - this.spacing.y)\n            }\n        } else {\n            // Connected\n            if (this.collides(event.x, event.y)) {\n                if (type == EVENT_TYPE.mouseDown) {\n                    this.dragged = true\n                } \n                if (this.dragged) {\n                    if (type == EVENT_TYPE.mouseUp) {\n                        this.dragged = false\n                    } else if (type == EVENT_TYPE.mouseMove) {\n                        this.connected = false\n                        this.selected = true\n                        return\n                    }\n                }\n            } else {\n                this.dragged = false\n            }\n        }\n\n    }\n\n    /**\n     * Check if the coordinate collides with the line drawn in between the top and bottom placeholders.\n     * @param {int} x X-coordinate\n     * @param {int} y Y-coordinate\n     */\n    collides(x, y) {\n        if (this.position.x < x && x < this.position.x + this.getWidth() + this.text.width + this.spacing.selected) {\n            if (this.position.y < y && y < this.position.y + PlaceholderDimension.height * 2 + this.spacing.y * 2 + this.spacing.selected) {\n                return true\n            }\n        }\n        return false\n    }\n\n    /**\n     * Update rule, calculate positions for the placeholders recursively.\n     */\n    update() {\n        this.updatePosition(this.position.x, this.position.y)\n    }\n}\n\nexport {\n    DeductionRule\n}",
+    "static": true,
+    "longname": "/home/d471061c/work/naturaldeduction/src/components/DeductionRule.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "function",
+    "name": "getRuleName",
+    "memberof": "src/components/DeductionRule.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/DeductionRule.js~getRuleName",
+    "access": "public",
+    "export": false,
+    "importPath": "naturaldeduction/src/components/DeductionRule.js",
+    "importStyle": null,
+    "description": "Returns an identifier of a rule as a string, e.g. \"vE\" (elimination, or)",
+    "lineNumber": 12,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "RULE_TYPE"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "ruleType",
+        "description": "Type of the rule"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "CONJECTIVE"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "conjective",
+        "description": "Conjective of the rule"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 50,
+    "kind": "function",
+    "name": "getPlaceholderAmount",
+    "memberof": "src/components/DeductionRule.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/DeductionRule.js~getPlaceholderAmount",
+    "access": "public",
+    "export": false,
+    "importPath": "naturaldeduction/src/components/DeductionRule.js",
+    "importStyle": null,
+    "description": "Returns the amount of placeholders required on the top of the rule (as an input)",
+    "lineNumber": 47,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "RULE_TYPE"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "ruleType",
+        "description": "Type of the rule"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "CONJECTIVE"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "conjective",
+        "description": "Conjective of the rule"
+      }
+    ],
+    "return": {
+      "types": [
+        "number"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 51,
+    "kind": "class",
+    "name": "DeductionRule",
+    "memberof": "src/components/DeductionRule.js",
+    "static": true,
+    "longname": "src/components/DeductionRule.js~DeductionRule",
+    "access": "public",
+    "export": true,
+    "importPath": "naturaldeduction/src/components/DeductionRule.js",
+    "importStyle": "{DeductionRule}",
+    "description": null,
+    "lineNumber": 77,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/components/GameObject.js~GameObject"
+    ]
+  },
+  {
+    "__docId__": 52,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/components/DeductionRule.js~DeductionRule",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/DeductionRule.js~DeductionRule#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 78,
+    "undocument": true
+  },
+  {
+    "__docId__": 53,
+    "kind": "member",
+    "name": "id",
+    "memberof": "src/components/DeductionRule.js~DeductionRule",
+    "static": false,
+    "longname": "src/components/DeductionRule.js~DeductionRule#id",
+    "access": "public",
+    "description": null,
+    "lineNumber": 80,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "member",
+    "name": "position",
+    "memberof": "src/components/DeductionRule.js~DeductionRule",
+    "static": false,
+    "longname": "src/components/DeductionRule.js~DeductionRule#position",
+    "access": "public",
+    "description": null,
+    "lineNumber": 82,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"x\": *, \"y\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "member",
+    "name": "ruleType",
+    "memberof": "src/components/DeductionRule.js~DeductionRule",
+    "static": false,
+    "longname": "src/components/DeductionRule.js~DeductionRule#ruleType",
+    "access": "public",
+    "description": null,
+    "lineNumber": 83,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "member",
+    "name": "conjective",
+    "memberof": "src/components/DeductionRule.js~DeductionRule",
+    "static": false,
+    "longname": "src/components/DeductionRule.js~DeductionRule#conjective",
+    "access": "public",
+    "description": null,
+    "lineNumber": 84,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 57,
+    "kind": "member",
+    "name": "dragged",
+    "memberof": "src/components/DeductionRule.js~DeductionRule",
+    "static": false,
+    "longname": "src/components/DeductionRule.js~DeductionRule#dragged",
+    "access": "public",
+    "description": null,
+    "lineNumber": 87,
+    "undocument": true,
+    "type": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 58,
+    "kind": "member",
+    "name": "color",
+    "memberof": "src/components/DeductionRule.js~DeductionRule",
+    "static": false,
+    "longname": "src/components/DeductionRule.js~DeductionRule#color",
+    "access": "public",
+    "description": null,
+    "lineNumber": 88,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 59,
+    "kind": "member",
+    "name": "spacing",
+    "memberof": "src/components/DeductionRule.js~DeductionRule",
+    "static": false,
+    "longname": "src/components/DeductionRule.js~DeductionRule#spacing",
+    "access": "public",
+    "description": null,
+    "lineNumber": 89,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"x\": number, \"y\": number, \"text\": number, \"selected\": number}"
+      ]
+    }
+  },
+  {
+    "__docId__": 60,
+    "kind": "member",
+    "name": "selectedLength",
+    "memberof": "src/components/DeductionRule.js~DeductionRule",
+    "static": false,
+    "longname": "src/components/DeductionRule.js~DeductionRule#selectedLength",
+    "access": "public",
+    "description": null,
+    "lineNumber": 92,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    }
+  },
+  {
+    "__docId__": 61,
+    "kind": "member",
+    "name": "selected",
+    "memberof": "src/components/DeductionRule.js~DeductionRule",
+    "static": false,
+    "longname": "src/components/DeductionRule.js~DeductionRule#selected",
+    "access": "public",
+    "description": null,
+    "lineNumber": 93,
+    "undocument": true,
+    "type": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 62,
+    "kind": "member",
+    "name": "hoveredOver",
+    "memberof": "src/components/DeductionRule.js~DeductionRule",
+    "static": false,
+    "longname": "src/components/DeductionRule.js~DeductionRule#hoveredOver",
+    "access": "public",
+    "description": null,
+    "lineNumber": 94,
+    "undocument": true,
+    "type": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 63,
+    "kind": "member",
+    "name": "connected",
+    "memberof": "src/components/DeductionRule.js~DeductionRule",
+    "static": false,
+    "longname": "src/components/DeductionRule.js~DeductionRule#connected",
+    "access": "public",
+    "description": null,
+    "lineNumber": 97,
+    "undocument": true,
+    "type": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 64,
+    "kind": "member",
+    "name": "text",
+    "memberof": "src/components/DeductionRule.js~DeductionRule",
+    "static": false,
+    "longname": "src/components/DeductionRule.js~DeductionRule#text",
+    "access": "public",
+    "description": null,
+    "lineNumber": 100,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"value\": *, \"x\": *, \"y\": *, \"width\": number}"
+      ]
+    }
+  },
+  {
+    "__docId__": 65,
+    "kind": "member",
+    "name": "edge",
+    "memberof": "src/components/DeductionRule.js~DeductionRule",
+    "static": false,
+    "longname": "src/components/DeductionRule.js~DeductionRule#edge",
+    "access": "public",
+    "description": null,
+    "lineNumber": 101,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"sx\": *, \"sy\": *, \"ex\": *, \"ey\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 66,
+    "kind": "method",
+    "name": "setConnected",
+    "memberof": "src/components/DeductionRule.js~DeductionRule",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/DeductionRule.js~DeductionRule#setConnected",
+    "access": "public",
+    "description": "Set rule to be connected to other rule",
+    "lineNumber": 110,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 70,
+    "kind": "method",
+    "name": "updateComponents",
+    "memberof": "src/components/DeductionRule.js~DeductionRule",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/DeductionRule.js~DeductionRule#updateComponents",
+    "access": "public",
+    "description": "Update positions of components",
+    "lineNumber": 119,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 71,
+    "kind": "method",
+    "name": "createPlaceholders",
+    "memberof": "src/components/DeductionRule.js~DeductionRule",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/DeductionRule.js~DeductionRule#createPlaceholders",
+    "access": "public",
+    "description": "Create placeholders for deduction rule",
+    "lineNumber": 131,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 72,
+    "kind": "member",
+    "name": "placeholderAmount",
+    "memberof": "src/components/DeductionRule.js~DeductionRule",
+    "static": false,
+    "longname": "src/components/DeductionRule.js~DeductionRule#placeholderAmount",
+    "access": "public",
+    "description": null,
+    "lineNumber": 132,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 73,
+    "kind": "member",
+    "name": "placeholders",
+    "memberof": "src/components/DeductionRule.js~DeductionRule",
+    "static": false,
+    "longname": "src/components/DeductionRule.js~DeductionRule#placeholders",
+    "access": "public",
+    "description": null,
+    "lineNumber": 133,
+    "undocument": true,
+    "type": {
+      "types": [
+        "undefined[]"
+      ]
+    }
+  },
+  {
+    "__docId__": 74,
+    "kind": "member",
+    "name": "result",
+    "memberof": "src/components/DeductionRule.js~DeductionRule",
+    "static": false,
+    "longname": "src/components/DeductionRule.js~DeductionRule#result",
+    "access": "public",
+    "description": null,
+    "lineNumber": 143,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 75,
+    "kind": "method",
+    "name": "updatePlaceholder",
+    "memberof": "src/components/DeductionRule.js~DeductionRule",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/DeductionRule.js~DeductionRule#updatePlaceholder",
+    "access": "public",
+    "description": "Update the position of the placeholder.",
+    "lineNumber": 150,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "idx",
+        "description": "Index of the placeholder"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 76,
+    "kind": "method",
+    "name": "updatePosition",
+    "memberof": "src/components/DeductionRule.js~DeductionRule",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/DeductionRule.js~DeductionRule#updatePosition",
+    "access": "public",
+    "description": "Update the position of the rule.",
+    "lineNumber": 170,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "x",
+        "description": "new X-coordinate"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "y",
+        "description": "new Y-coordinate"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 77,
+    "kind": "method",
+    "name": "getWidth",
+    "memberof": "src/components/DeductionRule.js~DeductionRule",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/DeductionRule.js~DeductionRule#getWidth",
+    "access": "public",
+    "description": "Returns the width of the rule.",
+    "lineNumber": 186,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 78,
+    "kind": "method",
+    "name": "drawSelectionBox",
+    "memberof": "src/components/DeductionRule.js~DeductionRule",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/DeductionRule.js~DeductionRule#drawSelectionBox",
+    "access": "public",
+    "description": null,
+    "lineNumber": 191,
+    "undocument": true,
+    "params": [
+      {
+        "name": "ctx",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 79,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/components/DeductionRule.js~DeductionRule",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/DeductionRule.js~DeductionRule#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 202,
+    "undocument": true,
+    "params": [
+      {
+        "name": "ctx",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 80,
+    "kind": "method",
+    "name": "onEvent",
+    "memberof": "src/components/DeductionRule.js~DeductionRule",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/DeductionRule.js~DeductionRule#onEvent",
+    "access": "public",
+    "description": null,
+    "lineNumber": 219,
+    "undocument": true,
+    "params": [
+      {
+        "name": "type",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "event",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "rules",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 97,
+    "kind": "method",
+    "name": "collides",
+    "memberof": "src/components/DeductionRule.js~DeductionRule",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/DeductionRule.js~DeductionRule#collides",
+    "access": "public",
+    "description": "Check if the coordinate collides with the line drawn in between the top and bottom placeholders.",
+    "lineNumber": 292,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "x",
+        "description": "X-coordinate"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "y",
+        "description": "Y-coordinate"
+      }
+    ],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 98,
+    "kind": "method",
+    "name": "update",
+    "memberof": "src/components/DeductionRule.js~DeductionRule",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/DeductionRule.js~DeductionRule#update",
+    "access": "public",
+    "description": "Update rule, calculate positions for the placeholders recursively.",
+    "lineNumber": 304,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 99,
+    "kind": "file",
+    "name": "src/components/GameObject.js",
+    "content": "class GameObject {\n    constructor () {}\n\n    /**\n     * Render gameobject to canvas\n     * @param {context2d} ctx Context2D\n     */\n    render(ctx) {}\n\n    /**\n     * This method is called in the mainloop.\n     */\n    update() {}\n\n    /**\n     * Handle the event from the event listener\n     * @param {EVENT_TYPE} type Type of the event, e.g. mouseMove\n     * @param {window.event} event Event from the event listener\n     * @param {[rules]} rules An array of rules in the game\n     */\n    onEvent(type, event, rules) {}\n}\n\nexport default GameObject",
+    "static": true,
+    "longname": "/home/d471061c/work/naturaldeduction/src/components/GameObject.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 100,
+    "kind": "class",
+    "name": "GameObject",
+    "memberof": "src/components/GameObject.js",
+    "static": true,
+    "longname": "src/components/GameObject.js~GameObject",
+    "access": "public",
+    "export": true,
+    "importPath": "naturaldeduction/src/components/GameObject.js",
+    "importStyle": "GameObject",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 101,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/components/GameObject.js~GameObject",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/GameObject.js~GameObject#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true
+  },
+  {
+    "__docId__": 102,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/components/GameObject.js~GameObject",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/GameObject.js~GameObject#render",
+    "access": "public",
+    "description": "Render gameobject to canvas",
+    "lineNumber": 8,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "context2d"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "ctx",
+        "description": "Context2D"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 103,
+    "kind": "method",
+    "name": "update",
+    "memberof": "src/components/GameObject.js~GameObject",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/GameObject.js~GameObject#update",
+    "access": "public",
+    "description": "This method is called in the mainloop.",
+    "lineNumber": 13,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 104,
+    "kind": "method",
+    "name": "onEvent",
+    "memberof": "src/components/GameObject.js~GameObject",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/GameObject.js~GameObject#onEvent",
+    "access": "public",
+    "description": "Handle the event from the event listener",
+    "lineNumber": 21,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "EVENT_TYPE"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "type",
+        "description": "Type of the event, e.g. mouseMove"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "window.event"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "event",
+        "description": "Event from the event listener"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "[rules]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "rules",
+        "description": "An array of rules in the game"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 105,
+    "kind": "file",
+    "name": "src/components/Placeholder.js",
+    "content": "import { setFillStyle, fillRectangle } from '../core/graphics.js'\nimport { EVENT_TYPE } from '../core/engine.js'\nimport GameObject from './GameObject.js'\n\n// Default width and height of the placeholder\nconst PlaceholderDimension = {\n    height: 20,\n    width: 20\n}\n\nconst PlaceholderType = {\n    empty: 1,\n    symbol: 2,\n    rule: 3\n}\n\nclass Placeholder extends GameObject {\n    constructor(rule, x, y) {\n        super()\n        this.position = { x, y }\n        this.width = PlaceholderDimension.width\n        this.height = PlaceholderDimension.height\n\n        // Settings\n        this.type = PlaceholderType.empty\n        this.value = null\n\n        // Colors\n        this.defaultColor = \"#ccc\"\n        this.hoverColor = \"#aaa\"\n        this.color = this.defaultColor\n\n        // Rule of which the placeholder is part of\n        this.rule = rule\n    }\n\n    /**\n     * Checks if the placeholder collides with given (x, y)-coordinate. \n     * Note: This is used only when the placeholder is empty.\n     * @param {int} x X-coordinate\n     * @param {int} y Y-coordinate\n     */\n    collides(x, y) {\n        return this.position.x <= x && x <= this.position.x + this.width && \n               this.position.y <= y && y <= this.position.y + this.height\n    }\n\n    /**\n     * Returns the width of the placeholder.\n     */\n    getWidth() {\n        if (this.type === PlaceholderType.rule) {\n            return this.value.getWidth()\n        }\n        return this.width\n    }\n\n    /**\n     * Sets a new position for the placeholder.\n     * @param {int} x New X-coordinate\n     * @param {int} y New Y-coordinate\n     */\n    updatePosition(x, y) {\n        this.position.x = x\n        this.position.y = y\n        if (this.type === PlaceholderType.rule) {\n            this.value.updatePosition(this.position.x, this.position.y)\n        }\n    }\n\n    render(ctx) {\n        switch(this.type) {\n        case PlaceholderType.empty:\n            setFillStyle(ctx, this.color)\n            fillRectangle(ctx, this.position.x, this.position.y, this.width, this.height)\n            break\n        case PlaceholderType.symbol:\n            // TODO: Implement\n            break\n        case PlaceholderType.rule:\n            this.value.render(ctx)\n            break\n        }\n    }\n\n    /**\n     * Connect rule if there exists an active rule and \n     * the placeholder collides with the given x and y coordinates\n     * @param {[rule]} rules Array of rules given from the rule editor\n     * @param {int} x X-coordinate\n     * @param {int} y Y-coordinate\n     */\n    handleRuleConnection(rules, x, y) {\n        if (this.collides(x, y)) {\n            let [ruleId, rule] = Object.entries(rules).filter(([_, rule]) => rule.selected)[0]\n            if (rule && ruleId !== this.rule.id) {\n                this.value = rule \n                this.value.setConnected()\n                this.type = PlaceholderType.rule\n                delete rules[ruleId]\n            }\n        }\n    }\n\n    onEvent(type, event, rules) {\n        if (this.type === PlaceholderType.empty) {\n            if (type === EVENT_TYPE.mouseDown) {\n                if (this.collides(event.x, event.y)) {\n                    alert(\"To be implemented\")\n                } \n            } else if (type === EVENT_TYPE.mouseMove ) {\n                this.color = this.collides(event.x, event.y) ? this.hoverColor : this.defaultColor\n            } else if (type === EVENT_TYPE.mouseUp && this.collides(event.x, event.y)) {\n                this.handleRuleConnection(rules, event.x, event.y)\n            } \n            \n            // TODO: Add connection to touch screen\n        } else if (this.type === PlaceholderType.rule) {\n            this.value.onEvent(type, event, rules)\n            if (!this.value.connected) {\n                rules[this.value.id] = this.value\n                this.type = PlaceholderType.empty\n                this.rule.dragged = false\n                this.rule.selected = false\n                this.value = null\n            }\n        }\n    }\n}\n\nexport {\n    Placeholder,\n    PlaceholderDimension,\n    PlaceholderType\n}",
+    "static": true,
+    "longname": "/home/d471061c/work/naturaldeduction/src/components/Placeholder.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 106,
+    "kind": "class",
+    "name": "Placeholder",
+    "memberof": "src/components/Placeholder.js",
+    "static": true,
+    "longname": "src/components/Placeholder.js~Placeholder",
+    "access": "public",
+    "export": true,
+    "importPath": "naturaldeduction/src/components/Placeholder.js",
+    "importStyle": "{Placeholder}",
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/components/GameObject.js~GameObject"
+    ]
+  },
+  {
+    "__docId__": 107,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/components/Placeholder.js~Placeholder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/Placeholder.js~Placeholder#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true
+  },
+  {
+    "__docId__": 108,
+    "kind": "member",
+    "name": "position",
+    "memberof": "src/components/Placeholder.js~Placeholder",
+    "static": false,
+    "longname": "src/components/Placeholder.js~Placeholder#position",
+    "access": "public",
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"x\": *, \"y\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 109,
+    "kind": "member",
+    "name": "width",
+    "memberof": "src/components/Placeholder.js~Placeholder",
+    "static": false,
+    "longname": "src/components/Placeholder.js~Placeholder#width",
+    "access": "public",
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 110,
+    "kind": "member",
+    "name": "height",
+    "memberof": "src/components/Placeholder.js~Placeholder",
+    "static": false,
+    "longname": "src/components/Placeholder.js~Placeholder#height",
+    "access": "public",
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 111,
+    "kind": "member",
+    "name": "type",
+    "memberof": "src/components/Placeholder.js~Placeholder",
+    "static": false,
+    "longname": "src/components/Placeholder.js~Placeholder#type",
+    "access": "public",
+    "description": null,
+    "lineNumber": 25,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 112,
+    "kind": "member",
+    "name": "value",
+    "memberof": "src/components/Placeholder.js~Placeholder",
+    "static": false,
+    "longname": "src/components/Placeholder.js~Placeholder#value",
+    "access": "public",
+    "description": null,
+    "lineNumber": 26,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 113,
+    "kind": "member",
+    "name": "defaultColor",
+    "memberof": "src/components/Placeholder.js~Placeholder",
+    "static": false,
+    "longname": "src/components/Placeholder.js~Placeholder#defaultColor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 29,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 114,
+    "kind": "member",
+    "name": "hoverColor",
+    "memberof": "src/components/Placeholder.js~Placeholder",
+    "static": false,
+    "longname": "src/components/Placeholder.js~Placeholder#hoverColor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 30,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 115,
+    "kind": "member",
+    "name": "color",
+    "memberof": "src/components/Placeholder.js~Placeholder",
+    "static": false,
+    "longname": "src/components/Placeholder.js~Placeholder#color",
+    "access": "public",
+    "description": null,
+    "lineNumber": 31,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 116,
+    "kind": "member",
+    "name": "rule",
+    "memberof": "src/components/Placeholder.js~Placeholder",
+    "static": false,
+    "longname": "src/components/Placeholder.js~Placeholder#rule",
+    "access": "public",
+    "description": null,
+    "lineNumber": 34,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 117,
+    "kind": "method",
+    "name": "collides",
+    "memberof": "src/components/Placeholder.js~Placeholder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/Placeholder.js~Placeholder#collides",
+    "access": "public",
+    "description": "Checks if the placeholder collides with given (x, y)-coordinate. \nNote: This is used only when the placeholder is empty.",
+    "lineNumber": 43,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "x",
+        "description": "X-coordinate"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "y",
+        "description": "Y-coordinate"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 118,
+    "kind": "method",
+    "name": "getWidth",
+    "memberof": "src/components/Placeholder.js~Placeholder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/Placeholder.js~Placeholder#getWidth",
+    "access": "public",
+    "description": "Returns the width of the placeholder.",
+    "lineNumber": 51,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 119,
+    "kind": "method",
+    "name": "updatePosition",
+    "memberof": "src/components/Placeholder.js~Placeholder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/Placeholder.js~Placeholder#updatePosition",
+    "access": "public",
+    "description": "Sets a new position for the placeholder.",
+    "lineNumber": 63,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "x",
+        "description": "New X-coordinate"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "y",
+        "description": "New Y-coordinate"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 120,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/components/Placeholder.js~Placeholder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/Placeholder.js~Placeholder#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 71,
+    "undocument": true,
+    "params": [
+      {
+        "name": "ctx",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 121,
+    "kind": "method",
+    "name": "handleRuleConnection",
+    "memberof": "src/components/Placeholder.js~Placeholder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/Placeholder.js~Placeholder#handleRuleConnection",
+    "access": "public",
+    "description": "Connect rule if there exists an active rule and \nthe placeholder collides with the given x and y coordinates",
+    "lineNumber": 93,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "[rule]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "rules",
+        "description": "Array of rules given from the rule editor"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "x",
+        "description": "X-coordinate"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "y",
+        "description": "Y-coordinate"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 124,
+    "kind": "method",
+    "name": "onEvent",
+    "memberof": "src/components/Placeholder.js~Placeholder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/Placeholder.js~Placeholder#onEvent",
+    "access": "public",
+    "description": null,
+    "lineNumber": 105,
+    "undocument": true,
+    "params": [
+      {
+        "name": "type",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "event",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "rules",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 128,
+    "kind": "variable",
+    "name": "PlaceholderDimension",
+    "memberof": "src/components/Placeholder.js",
+    "static": true,
+    "longname": "src/components/Placeholder.js~PlaceholderDimension",
+    "access": "public",
+    "export": true,
+    "importPath": "naturaldeduction/src/components/Placeholder.js",
+    "importStyle": "{PlaceholderDimension}",
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"height\": number, \"width\": number}"
+      ]
+    }
+  },
+  {
+    "__docId__": 129,
+    "kind": "variable",
+    "name": "PlaceholderType",
+    "memberof": "src/components/Placeholder.js",
+    "static": true,
+    "longname": "src/components/Placeholder.js~PlaceholderType",
+    "access": "public",
+    "export": true,
+    "importPath": "naturaldeduction/src/components/Placeholder.js",
+    "importStyle": "{PlaceholderType}",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"empty\": number, \"symbol\": number, \"rule\": number}"
+      ]
+    }
+  },
+  {
+    "__docId__": 130,
+    "kind": "file",
+    "name": "src/components/RuleEditor.js",
+    "content": "import GameObject from './GameObject.js'\nimport { DeductionRule } from './DeductionRule.js'\n\nclass RuleEditor extends GameObject {\n    constructor () {\n        super()\n        this.rules = {}\n    }\n\n    addRule(x, y, ruleType, conjective) {\n        const ruleId = Math.random().toString(36).substring(7)\n        this.rules[ruleId] = new DeductionRule(ruleId, x, y, ruleType, conjective)\n    }\n\n    render(ctx) {\n        for (let rule of Object.values(this.rules)) {\n            rule.render(ctx)\n        }\n    }\n\n    onEvent(type, event) {\n        for (let rule of Object.values(this.rules)) {\n            rule.onEvent(type, event, this.rules)\n        }\n    }\n\n    update () {\n        for (let rule of Object.values(this.rules)) {\n            rule.update()\n        }\n    }\n}\n\nexport {\n    RuleEditor\n}",
+    "static": true,
+    "longname": "/home/d471061c/work/naturaldeduction/src/components/RuleEditor.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 131,
+    "kind": "class",
+    "name": "RuleEditor",
+    "memberof": "src/components/RuleEditor.js",
+    "static": true,
+    "longname": "src/components/RuleEditor.js~RuleEditor",
+    "access": "public",
+    "export": true,
+    "importPath": "naturaldeduction/src/components/RuleEditor.js",
+    "importStyle": "{RuleEditor}",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/components/GameObject.js~GameObject"
+    ]
+  },
+  {
+    "__docId__": 132,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/components/RuleEditor.js~RuleEditor",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/RuleEditor.js~RuleEditor#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true
+  },
+  {
+    "__docId__": 133,
+    "kind": "member",
+    "name": "rules",
+    "memberof": "src/components/RuleEditor.js~RuleEditor",
+    "static": false,
+    "longname": "src/components/RuleEditor.js~RuleEditor#rules",
+    "access": "public",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    }
+  },
+  {
+    "__docId__": 134,
+    "kind": "method",
+    "name": "addRule",
+    "memberof": "src/components/RuleEditor.js~RuleEditor",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/RuleEditor.js~RuleEditor#addRule",
+    "access": "public",
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "params": [
+      {
+        "name": "x",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "y",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "ruleType",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "conjective",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 135,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/components/RuleEditor.js~RuleEditor",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/RuleEditor.js~RuleEditor#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "params": [
+      {
+        "name": "ctx",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 136,
+    "kind": "method",
+    "name": "onEvent",
+    "memberof": "src/components/RuleEditor.js~RuleEditor",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/RuleEditor.js~RuleEditor#onEvent",
+    "access": "public",
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "params": [
+      {
+        "name": "type",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "event",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 137,
+    "kind": "method",
+    "name": "update",
+    "memberof": "src/components/RuleEditor.js~RuleEditor",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/RuleEditor.js~RuleEditor#update",
+    "access": "public",
+    "description": null,
+    "lineNumber": 27,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 138,
+    "kind": "file",
+    "name": "src/core/engine.js",
+    "content": "import { clearCanvas } from './graphics.js'\n\nconst EVENT_TYPE = {\n    mouseDown: 1,\n    mouseUp: 2,\n    mouseMove: 3,\n    touchStart: 4,\n    touchEnd: 5,\n    touchCancel: 6,\n    touchMove: 7\n}\n\n\n/**\n * Resize the canvas to the screen\n * @param {canvas} canvas canvas (html-element)\n */\nconst resizeCanvasToScreen = (canvas) => () => {\n    canvas.width = window.innerWidth\n    canvas.height = window.innerHeight\n}\n\n/**\n * Returns ctx (context 2D) and canvas (html-element)\n * @param {string} canvasId Id for newly created canvas\n */\nconst setupCanvas = (canvasId) => {\n    const canvas = document.createElement(\"canvas\")\n    canvas.setAttribute(\"id\", canvasId)\n\n    const resize = resizeCanvasToScreen(canvas)\n    resize() \n\n    window.addEventListener('resize', resize, false)\n    window.addEventListener('orientationchange', resize, false)\n\n    document.body.appendChild(canvas)\n    const ctx = canvas.getContext(\"2d\")\n\n    return { canvas, ctx }\n}\n\n/**\n * Catch event, stop its default method and from propagating.\n * @param {event} event Event from a listener\n */\nconst catchEvent = (event) => {\n    event.stopPropagation()\n    event.preventDefault()\n}\n\n/**\n * Run engine with given objects\n * @param {context2d} ctx context2d from canvas\n * @param {canvas} canvas canvas (html-element)\n * @param {[DeductionRule]} content Array of deduction rules\n */\nconst runEngine = (ctx, canvas, content) => {\n    window.onload = () => {\n        const update = () => {\n            content.forEach((object) => {\n                object.update()\n            })\n        }\n    \n        const render = (ctx) => {\n            clearCanvas(ctx, canvas)\n            ctx.beginPath()\n            ctx.save()\n    \n            content.forEach((object) => {\n                object.render(ctx)\n            })\n    \n            ctx.restore()\n        }\n    \n        const mainloop = () => {\n            update()\n            render(ctx)\n            requestAnimationFrame(mainloop)\n        }\n    \n        canvas.addEventListener('mousedown', (event) => {\n            catchEvent(event)\n            content.forEach((object) => {\n                object.onEvent(EVENT_TYPE.mouseDown, event)\n            })\n        })\n    \n        canvas.addEventListener('mouseup', (event) => {\n            catchEvent(event)\n            content.forEach((object) => {\n                object.onEvent(EVENT_TYPE.mouseUp, event)\n            })\n        })\n    \n        canvas.addEventListener('mousemove', (event) => {\n            catchEvent(event)\n            content.forEach((object) => {\n                object.onEvent(EVENT_TYPE.mouseMove, event)\n            })\n        })\n    \n        canvas.addEventListener('touchstart', (event) => {\n            catchEvent(event)\n            content.forEach((object) => {\n                object.onEvent(EVENT_TYPE.touchStart, event)\n            })\n        })\n    \n        canvas.addEventListener('touchend', (event) => {\n            catchEvent(event)\n            content.forEach((object) => {\n                object.onEvent(EVENT_TYPE.touchEnd, event)\n            })\n        })\n    \n        canvas.addEventListener('touchcancel', (event) => {\n            catchEvent(event)\n            content.forEach((object) => {\n                object.onEvent(EVENT_TYPE.touchCancel, event)\n            })\n        })\n    \n        canvas.addEventListener('touchmove', (event) => {\n            catchEvent(event)\n            content.forEach((object) => {\n                object.onEvent(EVENT_TYPE.touchMove, event)\n            })\n        })\n        \n        mainloop()\n    }\n}\n\nexport {\n    EVENT_TYPE,\n    setupCanvas,\n    runEngine\n}",
+    "static": true,
+    "longname": "/home/d471061c/work/naturaldeduction/src/core/engine.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 139,
+    "kind": "function",
+    "name": "resizeCanvasToScreen",
+    "memberof": "src/core/engine.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core/engine.js~resizeCanvasToScreen",
+    "access": "public",
+    "export": false,
+    "importPath": "naturaldeduction/src/core/engine.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "params": [
+      {
+        "name": "canvas",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 140,
+    "kind": "function",
+    "name": "catchEvent",
+    "memberof": "src/core/engine.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core/engine.js~catchEvent",
+    "access": "public",
+    "export": false,
+    "importPath": "naturaldeduction/src/core/engine.js",
+    "importStyle": null,
+    "description": "Catch event, stop its default method and from propagating.",
+    "lineNumber": 47,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "event"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "event",
+        "description": "Event from a listener"
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 141,
+    "kind": "variable",
+    "name": "EVENT_TYPE",
+    "memberof": "src/core/engine.js",
+    "static": true,
+    "longname": "src/core/engine.js~EVENT_TYPE",
+    "access": "public",
+    "export": true,
+    "importPath": "naturaldeduction/src/core/engine.js",
+    "importStyle": "{EVENT_TYPE}",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"mouseDown\": number, \"mouseUp\": number, \"mouseMove\": number, \"touchStart\": number, \"touchEnd\": number, \"touchCancel\": number, \"touchMove\": number}"
+      ]
+    }
+  },
+  {
+    "__docId__": 142,
+    "kind": "function",
+    "name": "setupCanvas",
+    "memberof": "src/core/engine.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core/engine.js~setupCanvas",
+    "access": "public",
+    "export": true,
+    "importPath": "naturaldeduction/src/core/engine.js",
+    "importStyle": "{setupCanvas}",
+    "description": "Returns ctx (context 2D) and canvas (html-element)",
+    "lineNumber": 27,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "canvasId",
+        "description": "Id for newly created canvas"
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"canvas\": *, \"ctx\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 143,
+    "kind": "function",
+    "name": "runEngine",
+    "memberof": "src/core/engine.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core/engine.js~runEngine",
+    "access": "public",
+    "export": true,
+    "importPath": "naturaldeduction/src/core/engine.js",
+    "importStyle": "{runEngine}",
+    "description": "Run engine with given objects",
+    "lineNumber": 58,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "context2d"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "ctx",
+        "description": "context2d from canvas"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "canvas"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "canvas",
+        "description": "canvas (html-element)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "[DeductionRule]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "content",
+        "description": "Array of deduction rules"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 144,
+    "kind": "file",
+    "name": "src/core/graphics.js",
+    "content": "const GLOBAL_SETTINGS = {\n    fontSize: 20,\n    fontStyle: 'Arial',\n    fontAlign: 'center',\n    fontColor: '#000',\n    defaultFillStyle: '#000'\n}\n\n/**\n * Fill rectangle to given (x, y)-coordinate\n * @param {context2d} ctx context2d from canvas\n * @param {int} x X-coordinate\n * @param {int} y Y-coordinate\n * @param {int} width Width of the rectangle\n * @param {int} height Height of the rectangle\n */\nconst fillRectangle = (ctx, x, y, width, height) => {\n    ctx.fillRect(x, y, width, height)\n    ctx.stroke()\n}\n\n/**\n * Draw line from starting coordinate to ending coordinate\n * @param {context2d} ctx context2d from canvas\n * @param {int} sx Starting X-coordinate\n * @param {int} sy Starting Y-coordinate\n * @param {int} ex Ending X-coordinate\n * @param {int} ey Ending Y-coordinate\n */\nconst line = (ctx, sx, sy, ex, ey) => {\n    ctx.moveTo(sx, sy)\n    ctx.lineTo(ex, ey)\n    ctx.stroke()\n}\n\n/**\n * Draw selected rectangle\n * @param {context2d} ctx context2d from canvas\n * @param {int} x X-coordinate\n * @param {int} y Y-coordinate\n * @param {int} width Width\n * @param {int} height Height\n * @param {int} length Length of the lines\n */\nconst fillSelected = (ctx, x, y, width, height, length) => {\n    // top left corner\n    line(ctx, x, y, x + length, y)\n    line(ctx, x, y, x, y + length)\n    // top right corner\n    line(ctx, x + width, y, x + width - length, y)\n    line(ctx, x + width, y, x + width, y + length)\n    // lower left corner \n    line(ctx, x, y + height, x + length, y + height)\n    line(ctx, x, y + height, x, y + height - length)\n    // lower right corner\n    line(ctx, x + width, y + height, x + width - length, y + height)\n    line(ctx, x + width, y + height, x + width, y - length + height)\n}\n\n/**\n * Draw text on the canvas\n * @param {context2d} ctx context2d from canvas\n * @param {string} text Text to be displayed\n * @param {int} x X-coordinate of the text\n * @param {int} y Y-coordinate of the text\n */\nconst fillText = (ctx, text, x, y) => {\n    ctx.font = `${GLOBAL_SETTINGS.fontSize}px ${GLOBAL_SETTINGS.fontStyle}`\n    ctx.textAlign = GLOBAL_SETTINGS.FontAlign \n    ctx.fillText(text, x, y)\n}\n\n/**\n * Sets fill style for the context\n * @param {context2d} ctx context2d from canvas\n * @param {string} fillStyle Fill style for the context\n */\nconst setFillStyle = (ctx, fillStyle) => {\n    ctx.fillStyle = fillStyle\n}\n\n/**\n * Sets fill style to default\n * @param {context2d} ctx context2d from canvas\n */\nconst resetFillStyle = (ctx) => {\n    setFillStyle(ctx, GLOBAL_SETTINGS.defaultFillStyle)\n}\n\n/**\n * Clear the canvas\n * @param {context2d} ctx context2d from canvas\n * @param {canvas} canvas canvas (html-element)\n */\nconst clearCanvas = (ctx, canvas) => {\n    resetFillStyle(ctx)\n    ctx.clearRect(0, 0, canvas.width, canvas.height)\n}\n\nexport {\n    GLOBAL_SETTINGS,\n    fillRectangle,\n    line,\n    fillText,\n    clearCanvas,\n    setFillStyle,\n    fillSelected,\n    resetFillStyle\n}",
+    "static": true,
+    "longname": "/home/d471061c/work/naturaldeduction/src/core/graphics.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 145,
+    "kind": "variable",
+    "name": "GLOBAL_SETTINGS",
+    "memberof": "src/core/graphics.js",
+    "static": true,
+    "longname": "src/core/graphics.js~GLOBAL_SETTINGS",
+    "access": "public",
+    "export": true,
+    "importPath": "naturaldeduction/src/core/graphics.js",
+    "importStyle": "{GLOBAL_SETTINGS}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"fontSize\": number, \"fontStyle\": string, \"fontAlign\": string, \"fontColor\": string, \"defaultFillStyle\": string}"
+      ]
+    }
+  },
+  {
+    "__docId__": 146,
+    "kind": "function",
+    "name": "fillRectangle",
+    "memberof": "src/core/graphics.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core/graphics.js~fillRectangle",
+    "access": "public",
+    "export": true,
+    "importPath": "naturaldeduction/src/core/graphics.js",
+    "importStyle": "{fillRectangle}",
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "params": [
+      {
+        "name": "ctx",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "x",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "y",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "width",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "height",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 147,
+    "kind": "function",
+    "name": "line",
+    "memberof": "src/core/graphics.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core/graphics.js~line",
+    "access": "public",
+    "export": true,
+    "importPath": "naturaldeduction/src/core/graphics.js",
+    "importStyle": "{line}",
+    "description": "Draw line from starting coordinate to ending coordinate",
+    "lineNumber": 30,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "context2d"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "ctx",
+        "description": "context2d from canvas"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sx",
+        "description": "Starting X-coordinate"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sy",
+        "description": "Starting Y-coordinate"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "ex",
+        "description": "Ending X-coordinate"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "ey",
+        "description": "Ending Y-coordinate"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 148,
+    "kind": "function",
+    "name": "fillText",
+    "memberof": "src/core/graphics.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core/graphics.js~fillText",
+    "access": "public",
+    "export": true,
+    "importPath": "naturaldeduction/src/core/graphics.js",
+    "importStyle": "{fillText}",
+    "description": "Draw text on the canvas",
+    "lineNumber": 67,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "context2d"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "ctx",
+        "description": "context2d from canvas"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "text",
+        "description": "Text to be displayed"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "x",
+        "description": "X-coordinate of the text"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "y",
+        "description": "Y-coordinate of the text"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 149,
+    "kind": "function",
+    "name": "clearCanvas",
+    "memberof": "src/core/graphics.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core/graphics.js~clearCanvas",
+    "access": "public",
+    "export": true,
+    "importPath": "naturaldeduction/src/core/graphics.js",
+    "importStyle": "{clearCanvas}",
+    "description": "Clear the canvas",
+    "lineNumber": 95,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "context2d"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "ctx",
+        "description": "context2d from canvas"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "canvas"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "canvas",
+        "description": "canvas (html-element)"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 150,
+    "kind": "function",
+    "name": "setFillStyle",
+    "memberof": "src/core/graphics.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core/graphics.js~setFillStyle",
+    "access": "public",
+    "export": true,
+    "importPath": "naturaldeduction/src/core/graphics.js",
+    "importStyle": "{setFillStyle}",
+    "description": "Sets fill style for the context",
+    "lineNumber": 78,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "context2d"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "ctx",
+        "description": "context2d from canvas"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "fillStyle",
+        "description": "Fill style for the context"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 151,
+    "kind": "function",
+    "name": "fillSelected",
+    "memberof": "src/core/graphics.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core/graphics.js~fillSelected",
+    "access": "public",
+    "export": true,
+    "importPath": "naturaldeduction/src/core/graphics.js",
+    "importStyle": "{fillSelected}",
+    "description": "Draw selected rectangle",
+    "lineNumber": 45,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "context2d"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "ctx",
+        "description": "context2d from canvas"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "x",
+        "description": "X-coordinate"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "y",
+        "description": "Y-coordinate"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "width",
+        "description": "Width"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "height",
+        "description": "Height"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "int"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "length",
+        "description": "Length of the lines"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 152,
+    "kind": "function",
+    "name": "resetFillStyle",
+    "memberof": "src/core/graphics.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core/graphics.js~resetFillStyle",
+    "access": "public",
+    "export": true,
+    "importPath": "naturaldeduction/src/core/graphics.js",
+    "importStyle": "{resetFillStyle}",
+    "description": "Sets fill style to default",
+    "lineNumber": 86,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "context2d"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "ctx",
+        "description": "context2d from canvas"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 153,
+    "kind": "file",
+    "name": "src/core/rule.js",
+    "content": "const CONJECTIVE = {\n    and: 1,\n    or: 2,\n    implication: 3,\n    equivelance: 4,\n    negation: 5\n}\n\nconst CONJECTIVE_SYMBOL = {\n    and: '∧',\n    or: '∨',\n    implication: '→',\n    equivelance: '↔',\n    negation: '¬'\n}\n\nconst RULE_TYPE = {\n    introduction: 1,\n    elimination: 2\n}\n\nconst RULE_TYPE_EN = {\n    introduction : 'I',\n    elimination : 'E'\n}\n\nconst RULE_TYPE_FI = {\n    introduction : 'T',\n    elimination : 'E'\n}\n\nexport {\n    CONJECTIVE,\n    CONJECTIVE_SYMBOL,\n    RULE_TYPE,\n    RULE_TYPE_EN,\n    RULE_TYPE_FI\n}",
+    "static": true,
+    "longname": "/home/d471061c/work/naturaldeduction/src/core/rule.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 154,
+    "kind": "variable",
+    "name": "CONJECTIVE",
+    "memberof": "src/core/rule.js",
+    "static": true,
+    "longname": "src/core/rule.js~CONJECTIVE",
+    "access": "public",
+    "export": true,
+    "importPath": "naturaldeduction/src/core/rule.js",
+    "importStyle": "{CONJECTIVE}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"and\": number, \"or\": number, \"implication\": number, \"equivelance\": number, \"negation\": number}"
+      ]
+    }
+  },
+  {
+    "__docId__": 155,
+    "kind": "variable",
+    "name": "CONJECTIVE_SYMBOL",
+    "memberof": "src/core/rule.js",
+    "static": true,
+    "longname": "src/core/rule.js~CONJECTIVE_SYMBOL",
+    "access": "public",
+    "export": true,
+    "importPath": "naturaldeduction/src/core/rule.js",
+    "importStyle": "{CONJECTIVE_SYMBOL}",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"and\": string, \"or\": string, \"implication\": string, \"equivelance\": string, \"negation\": string}"
+      ]
+    }
+  },
+  {
+    "__docId__": 156,
+    "kind": "variable",
+    "name": "RULE_TYPE",
+    "memberof": "src/core/rule.js",
+    "static": true,
+    "longname": "src/core/rule.js~RULE_TYPE",
+    "access": "public",
+    "export": true,
+    "importPath": "naturaldeduction/src/core/rule.js",
+    "importStyle": "{RULE_TYPE}",
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"introduction\": number, \"elimination\": number}"
+      ]
+    }
+  },
+  {
+    "__docId__": 157,
+    "kind": "variable",
+    "name": "RULE_TYPE_EN",
+    "memberof": "src/core/rule.js",
+    "static": true,
+    "longname": "src/core/rule.js~RULE_TYPE_EN",
+    "access": "public",
+    "export": true,
+    "importPath": "naturaldeduction/src/core/rule.js",
+    "importStyle": "{RULE_TYPE_EN}",
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"introduction\": string, \"elimination\": string}"
+      ]
+    }
+  },
+  {
+    "__docId__": 158,
+    "kind": "variable",
+    "name": "RULE_TYPE_FI",
+    "memberof": "src/core/rule.js",
+    "static": true,
+    "longname": "src/core/rule.js~RULE_TYPE_FI",
+    "access": "public",
+    "export": true,
+    "importPath": "naturaldeduction/src/core/rule.js",
+    "importStyle": "{RULE_TYPE_FI}",
+    "description": null,
+    "lineNumber": 27,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"introduction\": string, \"elimination\": string}"
+      ]
+    }
+  },
+  {
+    "__docId__": 159,
+    "kind": "file",
+    "name": "src/index.js",
+    "content": "import { runEngine, setupCanvas } from './core/engine.js'\nimport { RULE_TYPE, CONJECTIVE } from './core/rule.js'\nimport { RuleEditor } from './components/RuleEditor.js'\n\nconst editor = new RuleEditor()\n// Add few more rules to test connection with\neditor.addRule(100, 100, RULE_TYPE.introduction, CONJECTIVE.and)\neditor.addRule(100, 400, RULE_TYPE.introduction, CONJECTIVE.and)\neditor.addRule(100, 200, RULE_TYPE.introduction, CONJECTIVE.and)\neditor.addRule(100, 300, RULE_TYPE.introduction, CONJECTIVE.or)\neditor.addRule(400, 300, RULE_TYPE.introduction, CONJECTIVE.implication)\n\nconst content = [ editor ]\n\nconst { ctx, canvas } = setupCanvas(\"nd-editor\")\nrunEngine(ctx, canvas, content)",
+    "static": true,
+    "longname": "/home/d471061c/work/naturaldeduction/src/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 160,
+    "kind": "variable",
+    "name": "editor",
+    "memberof": "src/index.js",
+    "static": true,
+    "longname": "src/index.js~editor",
+    "access": "public",
+    "export": false,
+    "importPath": "naturaldeduction/src/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/components/RuleEditor.js~RuleEditor"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 161,
+    "kind": "variable",
+    "name": "content",
+    "memberof": "src/index.js",
+    "static": true,
+    "longname": "src/index.js~content",
+    "access": "public",
+    "export": false,
+    "importPath": "naturaldeduction/src/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "type": {
+      "types": [
+        "undefined[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 162,
+    "kind": "variable",
+    "name": "ctx",
+    "memberof": "src/index.js",
+    "static": true,
+    "longname": "src/index.js~ctx",
+    "access": "public",
+    "export": false,
+    "importPath": "naturaldeduction/src/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "kind": "index",
+    "content": "# Natural Deduction\nA proof of concept for creating natural deduction with an editor.\n\n### Development setup\n1. Clone the repository with `git clone https://github.com/d471061c/naturaldeduction.git`\n2. Install packages with `npm install`\n3. Run the application with `npm start`\n4. Go to http://localhost:8080",
+    "longname": "/home/d471061c/work/naturaldeduction/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"naturaldeduction\",\n  \"version\": \"1.0.0\",\n  \"description\": \"A proof of concept\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"start\": \"http-server -a localhost -f index.html\",\n    \"docs\": \"./node_modules/.bin/esdoc\",\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/d471061c/naturaldeduction.git\"\n  },\n  \"keywords\": [\n    \"naturaldeduction\"\n  ],\n  \"author\": \"d471061c\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/d471061c/naturaldeduction/issues\"\n  },\n  \"homepage\": \"https://github.com/d471061c/naturaldeduction#readme\",\n  \"dependencies\": {\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"http-server\": \"^0.12.3\"\n  },\n  \"devDependencies\": {\n    \"eslint\": \"^6.8.0\"\n  }\n}\n",
+    "longname": "/home/d471061c/work/naturaldeduction/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

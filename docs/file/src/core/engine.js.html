@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/core/engine.js | naturaldeduction</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="A proof of concept"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="naturaldeduction"><meta property="twitter:description" content="A proof of concept"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/d471061c/naturaldeduction"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/DeductionRule.js~DeductionRule.html">DeductionRule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/GameObject.js~GameObject.html">GameObject</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/Placeholder.js~Placeholder.html">Placeholder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/RuleEditor.js~RuleEditor.html">RuleEditor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-PlaceholderDimension">PlaceholderDimension</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-PlaceholderType">PlaceholderType</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core">core</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-runEngine">runEngine</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setupCanvas">setupCanvas</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-clearCanvas">clearCanvas</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fillRectangle">fillRectangle</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fillSelected">fillSelected</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fillText">fillText</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-line">line</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-resetFillStyle">resetFillStyle</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setFillStyle">setFillStyle</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-EVENT_TYPE">EVENT_TYPE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-GLOBAL_SETTINGS">GLOBAL_SETTINGS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-CONJECTIVE">CONJECTIVE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-CONJECTIVE_SYMBOL">CONJECTIVE_SYMBOL</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RULE_TYPE">RULE_TYPE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RULE_TYPE_EN">RULE_TYPE_EN</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RULE_TYPE_FI">RULE_TYPE_FI</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/core/engine.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { clearCanvas } from &apos;./graphics.js&apos;
+
+const EVENT_TYPE = {
+    mouseDown: 1,
+    mouseUp: 2,
+    mouseMove: 3,
+    touchStart: 4,
+    touchEnd: 5,
+    touchCancel: 6,
+    touchMove: 7
+}
+
+
+/**
+ * Resize the canvas to the screen
+ * @param {canvas} canvas canvas (html-element)
+ */
+const resizeCanvasToScreen = (canvas) =&gt; () =&gt; {
+    canvas.width = window.innerWidth
+    canvas.height = window.innerHeight
+}
+
+/**
+ * Returns ctx (context 2D) and canvas (html-element)
+ * @param {string} canvasId Id for newly created canvas
+ */
+const setupCanvas = (canvasId) =&gt; {
+    const canvas = document.createElement(&quot;canvas&quot;)
+    canvas.setAttribute(&quot;id&quot;, canvasId)
+
+    const resize = resizeCanvasToScreen(canvas)
+    resize() 
+
+    window.addEventListener(&apos;resize&apos;, resize, false)
+    window.addEventListener(&apos;orientationchange&apos;, resize, false)
+
+    document.body.appendChild(canvas)
+    const ctx = canvas.getContext(&quot;2d&quot;)
+
+    return { canvas, ctx }
+}
+
+/**
+ * Catch event, stop its default method and from propagating.
+ * @param {event} event Event from a listener
+ */
+const catchEvent = (event) =&gt; {
+    event.stopPropagation()
+    event.preventDefault()
+}
+
+/**
+ * Run engine with given objects
+ * @param {context2d} ctx context2d from canvas
+ * @param {canvas} canvas canvas (html-element)
+ * @param {[DeductionRule]} content Array of deduction rules
+ */
+const runEngine = (ctx, canvas, content) =&gt; {
+    window.onload = () =&gt; {
+        const update = () =&gt; {
+            content.forEach((object) =&gt; {
+                object.update()
+            })
+        }
+    
+        const render = (ctx) =&gt; {
+            clearCanvas(ctx, canvas)
+            ctx.beginPath()
+            ctx.save()
+    
+            content.forEach((object) =&gt; {
+                object.render(ctx)
+            })
+    
+            ctx.restore()
+        }
+    
+        const mainloop = () =&gt; {
+            update()
+            render(ctx)
+            requestAnimationFrame(mainloop)
+        }
+    
+        canvas.addEventListener(&apos;mousedown&apos;, (event) =&gt; {
+            catchEvent(event)
+            content.forEach((object) =&gt; {
+                object.onEvent(EVENT_TYPE.mouseDown, event)
+            })
+        })
+    
+        canvas.addEventListener(&apos;mouseup&apos;, (event) =&gt; {
+            catchEvent(event)
+            content.forEach((object) =&gt; {
+                object.onEvent(EVENT_TYPE.mouseUp, event)
+            })
+        })
+    
+        canvas.addEventListener(&apos;mousemove&apos;, (event) =&gt; {
+            catchEvent(event)
+            content.forEach((object) =&gt; {
+                object.onEvent(EVENT_TYPE.mouseMove, event)
+            })
+        })
+    
+        canvas.addEventListener(&apos;touchstart&apos;, (event) =&gt; {
+            catchEvent(event)
+            content.forEach((object) =&gt; {
+                object.onEvent(EVENT_TYPE.touchStart, event)
+            })
+        })
+    
+        canvas.addEventListener(&apos;touchend&apos;, (event) =&gt; {
+            catchEvent(event)
+            content.forEach((object) =&gt; {
+                object.onEvent(EVENT_TYPE.touchEnd, event)
+            })
+        })
+    
+        canvas.addEventListener(&apos;touchcancel&apos;, (event) =&gt; {
+            catchEvent(event)
+            content.forEach((object) =&gt; {
+                object.onEvent(EVENT_TYPE.touchCancel, event)
+            })
+        })
+    
+        canvas.addEventListener(&apos;touchmove&apos;, (event) =&gt; {
+            catchEvent(event)
+            content.forEach((object) =&gt; {
+                object.onEvent(EVENT_TYPE.touchMove, event)
+            })
+        })
+        
+        mainloop()
+    }
+}
+
+export {
+    EVENT_TYPE,
+    setupCanvas,
+    runEngine
+}</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
