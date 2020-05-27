@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/core/graphics.js | naturaldeduction</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="A proof of concept"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="naturaldeduction"><meta property="twitter:description" content="A proof of concept"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/d471061c/naturaldeduction"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/DeductionRule.js~DeductionRule.html">DeductionRule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/GameObject.js~GameObject.html">GameObject</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/Placeholder.js~Placeholder.html">Placeholder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/RuleEditor.js~RuleEditor.html">RuleEditor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-PlaceholderDimension">PlaceholderDimension</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-PlaceholderType">PlaceholderType</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core">core</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-runEngine">runEngine</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setupCanvas">setupCanvas</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-clearCanvas">clearCanvas</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fillRectangle">fillRectangle</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fillSelected">fillSelected</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fillText">fillText</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-line">line</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-resetFillStyle">resetFillStyle</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setFillStyle">setFillStyle</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-EVENT_TYPE">EVENT_TYPE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-GLOBAL_SETTINGS">GLOBAL_SETTINGS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-CONJECTIVE">CONJECTIVE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-CONJECTIVE_SYMBOL">CONJECTIVE_SYMBOL</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RULE_TYPE">RULE_TYPE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RULE_TYPE_EN">RULE_TYPE_EN</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RULE_TYPE_FI">RULE_TYPE_FI</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/core/graphics.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">const GLOBAL_SETTINGS = {
+    fontSize: 20,
+    fontStyle: &apos;Arial&apos;,
+    fontAlign: &apos;center&apos;,
+    fontColor: &apos;#000&apos;,
+    defaultFillStyle: &apos;#000&apos;
+}
+
+/**
+ * Fill rectangle to given (x, y)-coordinate
+ * @param {context2d} ctx context2d from canvas
+ * @param {int} x X-coordinate
+ * @param {int} y Y-coordinate
+ * @param {int} width Width of the rectangle
+ * @param {int} height Height of the rectangle
+ */
+const fillRectangle = (ctx, x, y, width, height) =&gt; {
+    ctx.fillRect(x, y, width, height)
+    ctx.stroke()
+}
+
+/**
+ * Draw line from starting coordinate to ending coordinate
+ * @param {context2d} ctx context2d from canvas
+ * @param {int} sx Starting X-coordinate
+ * @param {int} sy Starting Y-coordinate
+ * @param {int} ex Ending X-coordinate
+ * @param {int} ey Ending Y-coordinate
+ */
+const line = (ctx, sx, sy, ex, ey) =&gt; {
+    ctx.moveTo(sx, sy)
+    ctx.lineTo(ex, ey)
+    ctx.stroke()
+}
+
+/**
+ * Draw selected rectangle
+ * @param {context2d} ctx context2d from canvas
+ * @param {int} x X-coordinate
+ * @param {int} y Y-coordinate
+ * @param {int} width Width
+ * @param {int} height Height
+ * @param {int} length Length of the lines
+ */
+const fillSelected = (ctx, x, y, width, height, length) =&gt; {
+    // top left corner
+    line(ctx, x, y, x + length, y)
+    line(ctx, x, y, x, y + length)
+    // top right corner
+    line(ctx, x + width, y, x + width - length, y)
+    line(ctx, x + width, y, x + width, y + length)
+    // lower left corner 
+    line(ctx, x, y + height, x + length, y + height)
+    line(ctx, x, y + height, x, y + height - length)
+    // lower right corner
+    line(ctx, x + width, y + height, x + width - length, y + height)
+    line(ctx, x + width, y + height, x + width, y - length + height)
+}
+
+/**
+ * Draw text on the canvas
+ * @param {context2d} ctx context2d from canvas
+ * @param {string} text Text to be displayed
+ * @param {int} x X-coordinate of the text
+ * @param {int} y Y-coordinate of the text
+ */
+const fillText = (ctx, text, x, y) =&gt; {
+    ctx.font = `${GLOBAL_SETTINGS.fontSize}px ${GLOBAL_SETTINGS.fontStyle}`
+    ctx.textAlign = GLOBAL_SETTINGS.FontAlign 
+    ctx.fillText(text, x, y)
+}
+
+/**
+ * Sets fill style for the context
+ * @param {context2d} ctx context2d from canvas
+ * @param {string} fillStyle Fill style for the context
+ */
+const setFillStyle = (ctx, fillStyle) =&gt; {
+    ctx.fillStyle = fillStyle
+}
+
+/**
+ * Sets fill style to default
+ * @param {context2d} ctx context2d from canvas
+ */
+const resetFillStyle = (ctx) =&gt; {
+    setFillStyle(ctx, GLOBAL_SETTINGS.defaultFillStyle)
+}
+
+/**
+ * Clear the canvas
+ * @param {context2d} ctx context2d from canvas
+ * @param {canvas} canvas canvas (html-element)
+ */
+const clearCanvas = (ctx, canvas) =&gt; {
+    resetFillStyle(ctx)
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
+}
+
+export {
+    GLOBAL_SETTINGS,
+    fillRectangle,
+    line,
+    fillText,
+    clearCanvas,
+    setFillStyle,
+    fillSelected,
+    resetFillStyle
+}</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
